@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset End */
+
+.space-arround{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+html{
+    font-size: 10px;
+    background-color: #B0D9DD;
+}
+.common-proparty{
+    background-color: #7D58B7;
+    text-align: center;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    max-width:73.6rem ;
+    height:95rem;
+    background-color: #B0D9DD;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+}
+.flexbox-main{
+    width: 90%;
+    height: 52rem;
+    }
+.flexbox-big{
+    width: 65%;
+    height: 25rem;
+    line-height: 25rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+.flexbox-items{
+    width: 32%;
+    height: rem;
+    font-size: 2.4rem;
+    line-height: 25rem;
+  }
+/* End flexbox-main */
+
+.flexbox-second{
+    width: 96%;
+    height: 40rem;
+   }
+.second-main{
+    width: 50%;
+    height: 30rem;
+    line-height: 10rem;
+    letter-spacing: .2rem;
+}
+.second-big{
+    width: 98%;
+    height: 9rem;
+    border-radius: .5rem;
+    font-size: 2.4rem;
+    color: rgba(255,255,255,.8);
+}
+.second-item{
+    width: 48%;
+    height: 9rem;
+    border-radius: .7rem;
+    font-size: 1.4rem;
+}
+
+ 
