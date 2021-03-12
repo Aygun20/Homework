@@ -65,7 +65,7 @@ a{
  .container .part-1{
    width: 100%;
    height: 100vh;
-   background-image: url(/space.jpg);
+   background-image: url(space.jpg);
    background-size: cover;
    background-position:center ;
    line-height: 100vh;
@@ -155,13 +155,13 @@ flex-direction: column;
     border-radius: 10px;
 }
 .box-1{
-    background-image: url(/space-fly.jpg);
+    background-image: url(space-fly.jpg);
      }
 .box-2{
-  background-image: url(/space-live.jpg);
+  background-image: url(space-live.jpg);
 }
 .box-3{   
-  background-image: url(/space-back.jpg);
+  background-image: url(space-back.jpg);
  }
  /* End part-2 */
 
