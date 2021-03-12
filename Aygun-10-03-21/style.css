@@ -1,0 +1,224 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+/* My Codes */
+.space-arround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.container{
+    width: 100%;
+    height: 220vh;
+    background-color: #2F2F2F;
+    color: #fff;
+        }
+     
+ .container .part-1{
+   width: 100%;
+   height: 100vh;
+   background-image: url(/space.jpg);
+   background-size: cover;
+   background-position:center ;
+   line-height: 100vh;
+   text-align: center;
+   font-size: 40px;
+   font-weight: 500;
+ }
+ .navbar{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 94%;
+    height: 50px;
+      }
+   .container .part-1 .navbar .menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+    .container .part-1 .navbar .menu ul li{
+        display: inline-block;
+    }
+  .part-1 .navbar .menu ul li a{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 20px;
+        }
+  .container .part-1 .navbar p{
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+          /* End part-1 */
+.container .part-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #2F2F2F;
+   }
+.container .part-2 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+   }
+.container .part-2 .box-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.box-main .box-area{
+display: flex;
+flex-direction: column;
+}
+.box-text{
+    width: 400px;
+    height: 60px;
+    color: #fff;
+    background-color: #404142;
+    text-align: center;
+     }
+ .box-common{
+    width: 400px;
+    height:200px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    }
+    .box-text  h2{
+        font-size: 24px;
+        text-align: center;
+        line-height: 60px;
+    }
+.box-text .btn{
+    width: 30%;
+    height: 60%;
+    color: #000;
+    background-color: #7CB5D6;
+    box-sizing: border-box;
+    position: relative;
+    top:25%;
+    left:35%;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.box-1{
+    background-image: url(/space-fly.jpg);
+     }
+.box-2{
+  background-image: url(/space-live.jpg);
+}
+.box-3{   
+  background-image: url(/space-back.jpg);
+ }
+ /* End part-2 */
+
+ section#contact .contact-title{
+    font-size: 40px;
+    background-color: #2F2F2F;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 4px;
+}
+section#contact .contact-area{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #2F2F2F;
+    justify-content: space-around;
+    align-items: center;
+}
+section#contact .contact-left{
+    width: 40%;
+    height: 40%;
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+section#contact .contact-form{
+    top:15%;
+    position: relative;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section#contact .contact-form input{
+    width: 290px;
+    height: 30px;
+    font-weight: bold;
+}
+section#contact .contact-form input#submit{
+    width: 90px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 8px;
+    background-color: #7CB5D6;
+    text-align: center;
+}
+
+      /* end contact */
+ @media only screen and (max-width: 540px) {      
+    .part-1 .navbar .menu ul li{
+          display: none;
+         }
+        
+      }
+ 
+     
+    

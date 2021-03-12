@@ -65,8 +65,7 @@ html{
 }
 .container{
     width: 100%;
-    max-width:73.6rem ;
-    height:95rem;
+    height:100vh;
     background-color: #B0D9DD;
     margin: 0 auto;
     display: flex;
@@ -75,46 +74,44 @@ html{
    flex-direction: column;
 }
 .flexbox-main{
-    width: 90%;
-    height: 52rem;
+    width: 94%;
+    height: 62rem;
     }
 .flexbox-big{
     width: 65%;
-    height: 25rem;
-    line-height: 25rem;
+    height: 30rem;
+    line-height: 30rem;
     font-size: 3rem;
     font-weight: 600;
   }
 .flexbox-items{
     width: 32%;
-    height: rem;
+    height:30 rem;
     font-size: 2.4rem;
-    line-height: 25rem;
+    line-height: 30rem;
   }
-/* End flexbox-main */
-
-.flexbox-second{
+  @media screen and (max-width:736px){
+.flexbox-big{
     width: 96%;
-    height: 40rem;
-   }
-.second-main{
-    width: 50%;
-    height: 30rem;
-    line-height: 10rem;
-    letter-spacing: .2rem;
+    height: 15rem;
+    line-height: 15rem;
+    border-radius: 5px;
 }
-.second-big{
-    width: 98%;
-    height: 9rem;
-    border-radius: .5rem;
-    font-size: 2.4rem;
-    color: rgba(255,255,255,.8);
-}
-.second-item{
-    width: 48%;
-    height: 9rem;
-    border-radius: .7rem;
-    font-size: 1.4rem;
-}
+.flexbox-items{
+    width: 46%;
+    height:15 rem;
+    font-size: 2rem;
+    line-height: 15rem;
+    border-radius: 5px;
+      }
+.flexbox-main{
+    width: 94%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+  }
+
 
  
