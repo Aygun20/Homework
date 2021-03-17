@@ -1,0 +1,126 @@
+section#customer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+section#customer .customer-con{
+    width: 94%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+}
+.customer-con .col-4{
+    width: 38rem;
+    height: 100vh;
+    position: relative;
+}
+.customer-con .col-8{
+   background-size: cover;
+    width: 60rem;
+    height: 100vh;
+    background-image: url(img/test1.jpg);
+}
+.customer-con .col-4 span{
+    display: block;
+    font-size: 4.5rem;
+    width: 25rem;
+    height: 10rem;
+    font-weight: bold;
+    position: absolute;
+    top:10rem;
+    left: 20rem;
+    z-index: 11;
+}
+.customer-con .col-4 .customer-text{
+    display: block;
+    font-size: 1.6rem;
+    width: 20rem;
+    height: 10rem;
+    line-height: 2.2rem;
+    position: absolute;
+    top:30rem;
+    left: 30rem;
+    z-index: 11;
+}
+.customer-con .col-4 .customer-text p#sara{
+    font-weight:bold;
+}
+/* Start Customer-lorem */
+.customer-lorem{
+    width: 94%;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 3rem;
+   }
+.customer-lorem .customer-lorem-content{
+    width: 53rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.customer-lorem-content p{
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 40rem;
+    text-align: center;
+}
+.customer-lorem .customer-lorem-content i{
+    font-size: 1.5rem;
+    line-height: 10rem;
+    }
+
+@media only screen and (max-width:600px){
+section#customer{
+    height: 45rem;
+}
+section#customer .customer-con{
+    width: 100%;
+    height: 45rem;
+    flex-direction: column;
+}
+.customer-con .col-4{
+    width: 100%;
+    height: 10rem;
+}
+.customer-con .col-8{
+    width: 100%;
+    height: 60vh;
+}
+.customer-con .col-4 span{
+    width: 100%;
+font-size: 4rem;
+text-align: center;
+height: 5rem;
+position: static;   
+}
+.customer-con .col-4 .customer-text{
+    display: absolute;
+    top: 58rem;
+    left:35%;
+    }
+        /* Start Customer-lorem */
+    .customer-lorem{
+        width: 100%;
+        height: 20vh;
+        margin: 0;
+       }
+    .customer-lorem .customer-lorem-content{
+        width: 100%;
+        height: 20rem;
+        display: block;
+    }
+    .customer-lorem-content p{
+        text-align: center;
+        width: 100%;
+        font-size: 1.3rem;
+        height: 10rem;
+        }
+    .customer-lorem .customer-lorem-content i{
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+    }
+}
