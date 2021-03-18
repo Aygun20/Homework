@@ -1,0 +1,31 @@
+nav{
+    position: fixed;
+    top: 0;
+    }
+.nav-link{
+    font-size: 20px;
+    border-bottom: 1px solid #E6EAEA;
+    margin-left: 50px;
+    padding: 24px 36px;
+    font-weight: bold;
+    transition: background 0.3s;
+    }
+.nav-item{
+    background-color: #fff;
+}
+.nav-item :hover{
+    background-color: #f4f7f6;
+}
+.card-text {
+    button{
+        height: 25px;
+        width: 38px;
+       padding: 3px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+html{
+    overflow-x: hidden;
+}

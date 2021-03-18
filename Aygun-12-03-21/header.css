@@ -1,6 +1,8 @@
+
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    /* overflow-x: hidden; */
 }
 header{
     display: flex;
@@ -81,6 +83,7 @@ position: relative;
       color: #000;
       font-weight: 900;
       transition: all .2s ease-in-out;
+      
     }
     .slider-menu .menu-con ul li :hover{
         color: #ec3737;
@@ -126,7 +129,7 @@ position: relative;
         height: 86vh;
         float: right;
        background-size: cover;
-        background-image: url(../img/slider-img.jpg);
+        background-image: url(img/slider-img.jpg);
         }
     .container .slider-img .white-overlay {
           display: inline-block;
@@ -201,6 +204,12 @@ position: relative;
       } */
 
       @media only screen and (max-width:600px){
+body nav.navbar{
+    display:none;
+}
+
+
+
  .container{
      max-width: 600px;
      width: 94%;

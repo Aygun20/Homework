@@ -2,18 +2,18 @@ footer{
 display: flex;
 justify-content: center;
 width: 97.5%;
-height: 150vh;
+height: 165vh;
 margin: 0 3rem;
      }
 footer .footer-con{
 width: 100%;
-height: 140vh;
+height: 150vh;
 display: flex;
 margin: 3rem 0;
       }
 .footer-con .col-3{
  width: 26rem;
- height: 140vh;
+ height: 150vh;
  position: relative;
 }
 .footer-con .col-3 span{
@@ -124,41 +124,41 @@ margin: 3rem 0;
   float: right;
 }
 @media only screen and (max-width:600px){
-   footer{
+  html{
+      overflow-x: hidden;
+  }
+    footer{
        width: 100%;
-       height: 105rem;
+       height: 95rem;
        margin: 0;
        flex-direction: column;
+
        }
    .form{
-       width: 100%;
+       width: 94%;
        height: 69rem;
       margin: 7rem 0;
       padding: 0;
    }
    .footer-con{
        width: 94%;
-       height: 110vh;
+       height: 100rem;
+flex-direction: column;
    }
    .footer-con .col-3 span{
-       display: none;
-       /* width: 100%;
+       width: 100%;
+       height: 5rem;
        font-size: 3.3rem;
        position: static;
        text-align: center;
-       background-color: aqua; */
+       margin-bottom: -5rem;
+       margin-top: 5rem;
    }
    .footer-con .col-3{
-       display: none;
-     /* display: block;
+       width: 100%;
+     
      width: 100%;
-    position: static;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: bisque; */
-       /* margin: 0; */
+   
    }
    .form-information{
        text-align: center;
