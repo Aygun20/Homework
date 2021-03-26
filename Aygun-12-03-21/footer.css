@@ -64,6 +64,7 @@ margin: 3rem 0;
      width: 27rem;
      height: 3.3rem;
      margin-top: 3rem;
+     outline: none;
  }
  .form-information{
      position: absolute;

@@ -31,10 +31,14 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 }
+section#lorem-text .lorem-button:hover button{
+    color: #fff;
+}
 section#lorem-text .lorem-button button{
     width: 14rem;
     height:3.2rem;
     border-radius: 6rem;
+    outline: none;
 }
 @media only screen and (max-width:600px){
 section#lorem-text{
