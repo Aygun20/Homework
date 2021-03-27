@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    background-color:#9966CC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    margin: 0 40px;
+    position: relative;
+    transition: 300ms all;
+}
+button.baku{
+   background-color: #CD5C5C; 
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+.container button:hover{
+    color: #fff;
+    background-color: #80ff00;
+}
+button.ankara{
+    background-color: hsl(174, 72%, 56%);
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+button.berlin{
+    background-color: #FFBF00;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+}
+button.oslo{
+    background-color: #9FE2BF;
+    font-family: 'Train One', cursive;
+}
+button.stockholm{
+    background-color: #DFFF00;
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+}
+button.london{
+    background-color: #800080;
+    font-family: 'Train One', cursive;
+}
+button.paris{
+    background-color: #FF0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+button.athens{
+    background-color: #00FF00;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 36px;
+}
+button.wellington{
+    background-color: #008080;
+}
+button.tiblisi{
+    background-color: #FF00FF;
+    font-family: 'Train One', cursive;
+    font-size: 36px;
+}
