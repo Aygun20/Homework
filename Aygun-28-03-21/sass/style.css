@@ -13,7 +13,7 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(/img/header-bg.jpg);
+  background-image: url(img/header-bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -662,7 +662,7 @@ section#about div.carousel-inner {
 section#contact {
   width: 100%;
   height: auto;
-  background-image: url("/img/logos/university-world-background-2.jpg");
+  background-image: url("img/logos/university-world-background-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
