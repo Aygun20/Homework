@@ -1,0 +1,145 @@
+section#contact{
+    width: 100%;
+    height: auto;
+    background-image: url('/img/logos/university-world-background-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   .contact-title{
+       font-size: 5rem;
+       text-align: center;
+       font-weight: bold;
+       padding-top: 10rem;
+   }
+   .contact-text{
+       font-size: 2rem;
+       text-align: center;
+       margin-bottom: 5rem;
+   }
+   .contact-form{
+       width: 100%;
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       margin-left: 1rem;
+       .contact-area{
+        width: 90%;
+        height: auto;
+       }
+       .contact-left{
+           width: 100%;
+           height: auto;
+       }
+          input,textarea{
+              width: 96%;
+              padding: 4rem;
+              font-size: 1.8rem;
+              font-weight: bold;
+              margin-bottom: 3rem;
+              outline: none;
+              border-radius: 5px;
+              outline: none;
+              border: none;
+          }
+        }
+        .btn-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height:auto;
+          button{
+              padding: 2.5rem 4.5rem;
+              font-weight: bold;
+              font-size: 2rem;
+              text-align: center;
+              margin-bottom: 10rem;
+            } 
+        }
+}
+// start footer
+footer{
+    width: 100%;
+    height:auto;
+    display: block;
+  .row-con{
+    .footer-text{
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        text-align: center;
+       }
+   .social-tab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+          span{
+              border-radius: 50%;
+              width: 5rem;
+              height: 5rem;
+              line-height: 5rem;
+              text-align: center;
+              font-size: 2rem;
+              margin-right: 2rem;
+              margin-top: 2rem;
+              cursor: pointer;
+           }
+      }
+    .privacy{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      p{
+            margin-right: 4rem;
+        }
+    }
+    }
+}
+ 
+
+@media only screen  and (min-width:1200px){
+#contact{
+    .contact-form{
+        display: flex;
+        .contact-area{
+            display: flex;
+            width: 84%;
+            height: auto;
+            input,textarea{
+            width: 60rem;
+            }
+            .input-1{
+                margin-top: 1rem;
+            }
+            textarea{
+                width: 60rem;
+            }
+        }
+    
+    }  
+}
+}
+// start footer
+footer{
+    .footer-text{
+        float: left;
+        width: 33.3%;
+       }
+    .social-tab{
+        float: right;
+        width: 33.3%;
+        padding-bottom: 1rem;
+       }
+    .privacy{
+        float: right;
+        width: 33.3%;
+        p{
+            line-height: 5rem;
+        }
+       }
+}
