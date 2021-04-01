@@ -138,6 +138,9 @@ header img {
     position: absolute;
     top: 20rem;
   }
+  header .header-content p {
+    font-size: 5rem;
+  }
   .menu-res-button {
     display: inline-block;
   }

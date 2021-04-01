@@ -105,6 +105,7 @@ header{
         overflow-x: hidden;
     }
    header{
+    
        li{
            a{
             margin-left: 20%;
@@ -120,6 +121,9 @@ header{
         .header-content{
             position: absolute;
             top:20rem;
+            p{
+                font-size: 5rem;
+            }
         }
     }
     .menu-res-button{
