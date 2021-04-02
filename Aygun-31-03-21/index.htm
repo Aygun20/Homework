@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+  
+
+<script>
+    var time = prompt("What time is it? [00-24)");
+    var time_morning   = 'Good Morning'
+    var time_afternoon = 'Good AfterNoon'
+    var time_night     = 'GoodNight'
+
+    if(time>=7 && time<12){
+     document.write(time_morning);
+
+    } else if (time>=12 && time<=18){
+        document.write(time_afternoon);
+
+    } 
+    else{
+    document.write(time_night);
+}
+</script>
+</body>
+</html>
