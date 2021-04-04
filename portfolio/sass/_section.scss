@@ -1,0 +1,517 @@
+
+//  Start Section One
+section#one{
+    height: 100vh;
+    position: relative;
+ .icon{
+     position: absolute;
+     right: 0;
+     top: 140px;
+     display: flex;
+     flex-direction: column;
+     span{
+         width: 50px;
+         height: 30px;
+         background-color: #fff;
+         margin-bottom: 20px;
+         padding: 0 15px;
+         transition: .5s all;
+        //  position: fixed;
+        p{
+            // opacity: 0;
+        }
+     }
+     span.icon-1:hover{
+         width: 120px;
+         background-color: #ff214f;
+     }
+     span.icon-2:hover{
+        width: 120px;
+        background-color: #ff214f;
+    }
+ }
+
+}
+@media only screen and (max-width:720px){
+    body{
+        overflow-x: hidden;
+    }
+    section#one{
+        max-width: 720px;
+        height: 80vh;
+        p{
+            font-size: 13px;
+        }
+    }
+    .col-st{
+        display: none;
+    }
+    .col-nd{
+        text-align: center;
+        margin: 0 !important;
+        .col-6-p{
+            margin: 20px !important;
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+    .card-two{
+        flex-direction: column;
+      .card{
+        width: 500px !important;
+            i{
+            font-size: 30px !important;
+            }
+        .card-body{
+            width: 500px;
+        }
+      }
+    }
+}
+//  End Section One
+//  Start Section Two
+section#two{
+    height: 120vh;
+    width: 100%;
+    .two-content{
+       .h1{width: 60%; }
+       .p{ width: 60%; }
+    }
+    .card span{
+        width: 90px;
+        height: 90px;
+        line-height: 100px;
+        border-radius: 50%;
+        
+    }
+}
+@media only screen and (max-width:720px){
+    section#two{
+        height: 270vh;
+        max-width:720px;
+        .card-box{
+            flex-direction: column;
+            .card{
+                width: 480px !important;
+                height: 360px !important;
+                margin-bottom: 30px;
+            }
+        }
+        .two-content{
+           .h1{
+             width: 100%; 
+             font-size: 24px;
+        }
+           .p{ 
+              width: 100%; 
+              font-size: 14px;
+              margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+//  End Section Two
+
+// Start Section Three
+
+@media only screen and (max-width:720px){
+    section#three{
+        text-align: center;
+        img{
+            height: 45vh !important;
+        }
+        .card{
+            height: 47vh !important;
+            margin: 0;
+           .card-body {
+               padding: 0 !important;
+               .p-1{
+                   margin-top: 0 !important;
+               }
+           .card-title{
+             font-size: 23px !important;
+            }
+            .p{
+                font-size: 14px;
+            }
+            
+        }
+        }
+    }
+}
+// End Section Three
+
+// Start Section Four
+section#four{
+    height: 100vh;
+    button :hover{
+        background-color: #fff !important;
+        transition: .5s all;
+    }
+}
+@media only screen and (max-width:720px){
+    section#four{
+        height: 130vh;
+        .col-four-st{
+            width: 100% !important;
+        }
+       button{
+           margin-bottom: 60px !important;
+       }
+       .col-four-nd{
+       margin: 0 !important;
+       }
+    }
+
+}
+// End Section Four
+
+// Start Section Five
+section#five{
+    height: auto;
+}
+@media only screen and (max-width:720px){
+    section#five{
+       .five-h1{
+           font-size: 25px !important;
+           text-align: center;
+           width: 100% !important;
+           margin-left: 0 !important;
+       }
+       .card{
+           flex-direction: column !important;
+           align-items: center;
+           text-align: center;
+           margin-left: 0 !important;
+           width: 100% !important;
+           padding: 0 !important;
+           .card-title{
+               font-size: 18px !important;
+           }
+           .card-text{
+               font-size: 14px;
+           }
+        } 
+    }
+}
+// End Section Five
+
+// Start Section Six
+section#six{
+    width: 100%;
+    height: 110vh;
+   span{
+        display: inline-block;
+        border-bottom:1px solid red;
+        width: 100px;
+        left:47%;
+        position: relative;
+    }
+    .col-six{
+        position: relative;
+        transition: .6s all ease-in-out;
+    }
+    .col-six .hover-content{
+      width: 100%;
+      height: 300px;
+      background-color: #ff214f;
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    .col-six:hover{
+        transform: rotateX(360deg);
+    }
+    .col-six:hover .hover-content{
+     opacity: 1;
+    }
+}
+@media only screen and (max-width:720px){
+    section#six{
+        height: auto;
+        span{
+            left:40%;
+        }
+        .six-p-st{
+            margin-top: 50px !important;
+        }
+        .row{
+            margin-top: 0 !important;
+            .card{
+                width: 100%;   
+            }
+        }
+    }   
+}
+// End Section Six
+
+// Start Section Seven
+section#seven{
+    background-image: url('../img/img-seven-1.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    @media only screen and (max-width:720px){
+        section#seven{
+            height: 130vh;
+            .col-four-nd{
+                width: 100% !important;
+                h1{
+                    font-size: 30px !important;
+                }
+            }
+           button{
+               margin-bottom: 60px !important;
+           }
+           .col-four-st{
+           margin: 0 !important;
+           }
+        }
+    
+    }
+// End Section Seven
+//Start Section Eight
+@media only screen and (max-width:720px){
+section#eight{
+    height: 60vh !important;
+    .col-box{
+        flex-direction: column;
+     .col-box-content-eight{
+            flex-direction: column !important;
+        }
+    }
+}
+}
+//End Section Eight
+
+//Start Section Nine
+section#nine{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.9)),url('../img/img-nine.jpg');
+    background-size: conver;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    .nine-st{
+    background-color: #fff;border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 35px 38px;
+    i{
+        font-size: 28px;
+    }
+  }
+}
+@media only screen and (max-width:720px){
+section#nine{
+    height: auto;
+    .nine-st{
+        width: 60px;
+        height: 60px;
+        padding:  20px 22px;
+        margin-top: 50px;
+        }
+    .nine-box-content{
+        width: 100% !important;
+    }
+    button{
+        margin-bottom: 50px;
+    }
+}
+
+}
+//End Section Nine
+
+//Start Section Ten
+section#slider{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+   }
+section#slider .slider-con{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.slider{
+    width:100%;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.slider-content{
+    width: 200%;
+    height: auto;
+    animation: slide 20s infinite;
+    padding-top: 100px;
+}
+.slider-item{
+    width: 12.5%;
+    float: left;
+}
+
+@keyframes slide{
+    0%{
+        transform:translateX(0rem) ;
+    }
+
+    30%{
+        transform:translateX(-74rem) ;
+    }
+   
+   
+    60%{
+        transform:translateX(-148rem) ;
+    }
+   
+    90%{
+        transform:translateX(-222rem) ;
+    }
+    100%{
+        transform:translateX(0rem) ;
+    }
+}
+@media only screen and (max-width:720px){
+
+.slider-content{
+    width: 800%;
+}
+}
+//End Section Ten
+
+// Start section eleven
+section#eleven{
+    h6{
+        transition: .5s ease-in-out;
+    }
+    h6:hover{
+        color:#ff214f;
+    }
+    span{
+        display: inline-block;
+        border-bottom:1px solid #ff214f;
+        width: 100px;
+        left:47%;
+        position: relative;
+    }
+.zoom-img{
+    margin:0 auto;
+    overflow: hidden;
+     img{
+        transition: .3s all;
+        position: relative;
+        }
+        // .img-owarlay-eleven{
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 200px;
+        //     transition: .5s ease-in-out;
+        //     left: 0;
+        //     top: 0;
+        //     background-color: rgba(0,0,0,.4);
+        //     opacity: 1;
+        // }
+    img:hover{
+        transform: scale(1.2);
+        }
+    }
+}
+@media only screen and (max-width:720px){
+    section#eleven{
+        height: auto;
+        .zoom-img img{
+            height: 300px !important;
+        }
+        span{
+            left:40%;
+        }
+        .row{
+            margin-top: 0 !important;
+            .card{
+                width: 100%;   
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    text-align: center;
+                }
+            }
+            }
+        }
+    }   
+}
+// End section eleven
+// Start Footer
+footer{
+    height: auto;
+    .footer-head{
+        width: 100%;
+        height: 20vh;
+        background-color: #141414;
+    }
+    .footer-area{
+        background-color: #1C1C1C;
+        height: auto;
+    }
+    .col-social{
+        i{
+            transition: .3s all;
+            font-size: 18px;
+        }
+        i:hover {
+         color: #ff214f !important;
+        }
+    }
+}
+@media only screen and (max-width:720px){
+footer{
+    height: auto;
+    .footer-head{
+        // margin: 0 !important;
+        height: auto;
+        justify-content: center !important;
+
+        .row{
+            padding: 0 !important;
+            width: 100%;
+            .footer-rd-span{
+                padding-left: 50px !important;
+            }
+            .col-img{
+                padding-left: 150px !important;
+            }
+            div{
+                margin-bottom: 20px;
+            }
+        }
+       
+    }
+}
+.footer-text-center{
+    text-align: center;
+} 
+
+.footer-blog-p{
+    width: 39%;
+}
+.no-image{
+    padding: 0 !important;
+}
+.footer-end{
+    text-align: center !important;
+}
+}
+// End Footer
