@@ -1,4 +1,7 @@
 header{
+    // .carousel-item  .banner1{
+    //     background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('../img/header_1.jpg');
+    //  }
     .navbar{
         top: 0;
         position: absolute;
@@ -7,6 +10,7 @@ header{
 }
 @media only screen and (max-width:720px){
      header{
+     
           .icon{
                 display: none !important;
             }
