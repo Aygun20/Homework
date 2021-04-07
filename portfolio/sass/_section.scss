@@ -1,35 +1,176 @@
+header{
+    .navbar{
+        top: 0;
+        position: absolute;
+        background:none;
+    }
+}
+@media only screen and (max-width:720px){
+     header{
+          .icon{
+                display: none !important;
+            }
+        .navbar-toggler{
+            opacity: 1 !important;
+            top:10px !important;
+            background: none;
+            border: none ;
+            right: 0;
+            position: absolute;
+            visibility: visible !important;
+            .nav-none{
+                display: inline-block !important;
+            }
+            .navbar-toggler-icon{
+                display: inline-block !important;
+            }
+            .search{
+                display: inline-block !important;
+            }
+        }
+        .navbar{
+            width: 100% !important;
+            .container{
+                margin: 0 !important;
+                padding: 0 !important;
+                .container-fluid{
+                    width: 100% !important;
 
+                }
+            }
+        }
+        .navbar-nav{
+            background-color: rgb(25, 24, 24)!important;
+            height: 40% !important;
+            width: 660px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            margin-top: 30px !important;
+            .nav-media{
+                display: none !important;
+            }
+           .nav-link{
+               width: 100% !important;
+           }
+            .nav-item{
+                font-size: 14px;
+                .chevron-nav{
+                    display: inline-block !important;
+                }
+            }
+            .nav-border{
+                border-bottom: 2px solid #808080;
+
+            }
+        }
+    }
+}
+.icon{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .icon-com{
+        width: 50px;
+        height: 30px;
+        background-color: #fff;
+        padding: 0 15px;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 2px #000;
+         }
+    .icon-1{
+        top: 140px;
+        position: fixed;
+        transition: .2s all;
+        overflow: hidden;
+    }
+    .icon-2{
+        top: 190px;
+        position: fixed;
+        transition: .2s all;
+        overflow: hidden;
+    }
+   
+    span.icon-1:hover{
+        width: 150px;
+        background-color: #ff214f;
+        overflow: visible;
+    }
+ span.icon-2:hover{
+       width: 210px;
+       background-color: #ff214f;
+       overflow: visible;
+   }
+}
+
+.content {
+    position: relative;
+    width: 25%;
+  }  
+  .content .content-overlay {
+    background: rgba(255,255,255,1);
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+ 
+  .content-details {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 0%);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 70%;
+    left: 50%;
+    opacity: 1;
+  }
+ @media only screen and (max-width:720px){
+     .content{
+width: 100% !important;
+margin-bottom: 30px !important;
+     }
+     .among{
+         height: auto !important;
+         .row{
+             width: 100% !important;
+         }
+     }
+     .among-col{
+         text-align: center !important;
+         padding-left: 200px !important;
+         flex-direction: column !important;
+     }
+ }
 //  Start Section One
+.navbar{
+    background-color: #000;
+}
+.text-bold{
+    font-weight: 500;
+    text-decoration: none;
+}
+html{
+    overflow-x: hidden;
+}
 section#one{
     height: 100vh;
     position: relative;
- .icon{
-     position: absolute;
-     right: 0;
-     top: 140px;
-     display: flex;
-     flex-direction: column;
-     span{
-         width: 50px;
-         height: 30px;
-         background-color: #fff;
-         margin-bottom: 20px;
-         padding: 0 15px;
-         transition: .5s all;
-        //  position: fixed;
-        p{
-            // opacity: 0;
-        }
-     }
-     span.icon-1:hover{
-         width: 120px;
-         background-color: #ff214f;
-     }
-     span.icon-2:hover{
-        width: 120px;
-        background-color: #ff214f;
-    }
- }
+ 
 
 }
 @media only screen and (max-width:720px){

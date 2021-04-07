@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,15 +15,121 @@
     <title>Portfolio</title>
   </head>
   <body>
-           <!-- Start Section One -->
-    <section id="one" style="background-color: #EEEFF1;">
-      
-      <!-- <div class="icon">
-        <span class="icon-1"><i class="text-secondary fas fa-cart-arrow-down"></i><span class="icon-p-1 text-uppercase" style="font-size: 10px;">Buy theme</span></span>
-        <span class="icon-2"><i class="text-secondary far fa-envelope"></i>      <span class="icon-p-2 text-uppercase" style="font-size: 10px;">Quick Question?</span></span>
-      </div> -->
+    <!-- Start Navbar -->
+    <header style="height: 100vh;">
+      <div class="icon">
+        <span class="icon-com icon-1 shadow d-flex"><i class="text-secondary  pt-2 me-3 fas fa-cart-arrow-down"></i><p class="text-light text-uppercase">Buy theme</p></span>
+        <span class="icon-com icon-2 shadow  d-flex"><i class="text-secondary pt-2 me-3 far fa-envelope"></i><p class="text-light text-uppercase">Quick question?</p></span>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top d-flex flex-row" >
+        <div class="container">
+        <img src="img/logo-white.png" alt="">
+        <div class="container-fluid ">
+          <button class="navbar-toggler d-flex " style="display: none; visibility: hidden;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav-none" style="display: none;" ></span>
+            <a class="nav-link search text-light nav-none" style="display: none;" href="#"><i class="fas fa-search"></i></a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto  mb-lg-0" style="font-size: 18px;" >
+              <li class="nav-item nav-border d-flex justify-content-between">
+                <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item nav-border d-flex justify-content-between">
+                <a class="nav-link active text-uppercase fw-bold" href="#">Pages</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item nav-border d-flex justify-content-between">
+                <a class="nav-link active text-uppercase fw-bold" href="#">Portfolio</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item nav-border d-flex justify-content-between">
+                <a class="nav-link active text-uppercase fw-bold" href="#">Blog</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item nav-border d-flex justify-content-between">
+                <a class="nav-link active text-uppercase fw-bold" href="#">Elements</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link active text-uppercase fw-bold" href="#">Features</a>
+                <span><i class="fas fa-chevron-down text-light pe-3 chevron-nav" style="display: none;"></i></span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-media" href="#">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light nav-media" href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-media href="#">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light nav-media" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light nav-media" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light nav-media" href="#"><i class="fab fa-dribbble"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner" style="background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)), url('../img/header-1.jpg');height:100vh;width: 100%;background-size: cover;background-position: center center;">
+              <div class="carousel-caption d-none d-md-block d-flex align-items-center" style="margin-left:80px;margin-bottom: 200px;width: 60%;">
+               <h6 class="mb-5 text-uppercase animate__animated animate__fadeInUp" style="letter-spacing: 2px;animation-duration: 2s;">We work hard, we play hard</h6>
+               <h1 class="banner-title text-uppercase text-light text-center animate__animated animate__fadeInUp" style="animation-duration: 2s;font-size:70px;">A print & digital creative studio</h1>
+               <button type="button" class="btn btn-outline-light px-4 py-2 fw-bold text-uppercase animate__animated animate__fadeInUp" style="animation-duration: 2s;animation-delay: .5s;">Explore work</button>
+             </div>
+           </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('../img/header_2.jpg');
+            height:100vh;width: 100%;background-size: cover;"></div>
+            <div class="carousel-caption d-none d-md-block  d-flex align-items-center" style="margin-left:240px;margin-bottom: 200px;width: 40%;">
+              <h6 class="mb-5 text-uppercase animate__animated animate__fadeInUp" style="letter-spacing: 2px;animation-duration: 2s;">We work hard, we play hard</h6>
+              <h1 class="banner-title text-uppercase text-light text-center animate__animated animate__fadeInUp" style="font-size:70px;animation-duration: 2s;">We are a web design agency</h1>
+              <button type="button" class="btn btn-outline-light px-4 py-2 fw-bold text-uppercase animate__animated animate__fadeInUp" style="animation-duration: 2s;animation-delay: .5s;">Explore work</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner"style="background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url('../img/header_3.jpg');
+            height:100vh;width: 100%;background-size: cover;"></div>
+            <div class="carousel-caption d-none d-md-block d-flex align-items-center" style="margin-left:80px;margin-bottom: 200px;width: 60%;">
+              <h6 class="mb-5 text-uppercase animate__animated animate__fadeInUp" style="letter-spacing: 2px;animation-duration: 2s;">We work hard, we play hard</h6>
+              <h1 class="banner-title text-uppercase text-light text-center animate__animated animate__fadeInUp" style="font-size:70px;animation-duration: 2s;">We are delivering beautiful products</h1>
+              <button type="button" class="btn btn-outline-light px-4 py-2 fw-bold text-uppercase animate__animated animate__fadeInUp" style="animation-duration: 2s;animation-delay: .5s;">Explore work</button>
+          </div>
+        </div>
+      </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+   <!-- End Navbar -->
 
-        <div class="container-fluid h-100">
+           <!-- Start Section One -->
+          
+    <section id="one" style="background-color: #EEEFF1;">
+            <div class="container-fluid h-100">
             <div class="row h-100  p-0 m-0">
             <div class="col-6 col-st h-100 p-0 m-0">
                 <img class="img-fluid w-100 h-100" src="img/section_2.webp" alt="" style="background-size:cover;padding-top: 6rem;">
@@ -65,7 +172,7 @@
        </div>
     <div class="card-box mt-5 d-flex">
 
-        <div class="card d-flex h-100 align-items-center mx-3" style="width: 18rem; height: 25rem;">
+        <div class="card d-flex h-100 align-items-center mx-3 animate__animated animate__fadeInUp" style="width: 18rem; height: 25rem;">
             <span class="bg-danger text-center mt-5 mb-4"><i class="fas fa-pencil-ruler text-light mb-4" style="font-size: 40px;"></i></span>
             <div class="card-body">
               <h5 class="card-title text-center">Pixel Perfect Design</h5>
@@ -73,7 +180,7 @@
             </div>
         </div>
 
-        <div class="card d-flex h-100 align-items-center mx-3" style="width: 18rem; height: 25rem;">
+        <div class="card d-flex h-100 align-items-center mx-3 animate__animated animate__fadeInUp" style="animation-delay: .5s; width: 18rem; height: 25rem;">
             <span class="bg-danger text-center mt-5 mb-4"><i class="fas fa-layer-group text-light mb-4" style="font-size: 40px;"></i></span>
             <div class="card-body">
               <h5 class="card-title text-center">Pixel Perfect Design</h5>
@@ -81,7 +188,7 @@
             </div>
         </div>
 
-        <div class="card d-flex h-100 align-items-center mx-3" style="width: 18rem; height: 25rem;">
+        <div class="card d-flex h-100 align-items-center mx-3 animate__animated animate__fadeInUp" style="animation-delay: 1s;width: 18rem; height: 25rem;">
             <span class="bg-danger text-center mt-5 mb-4"><i class="fas fa-cut text-light mb-4" style="font-size: 40px;"></i></span>
             <div class="card-body">
               <h5 class="card-title text-center">Pixel Perfect Design</h5>
@@ -89,7 +196,7 @@
             </div>
         </div>
 
-        <div class="card d-flex  h-100 align-items-center mx-3" style="width: 18rem; height: 25rem;">
+        <div class="card d-flex  h-100 align-items-center mx-3 animate__animated animate__fadeInUp" style="animation-delay: 1.5s; width: 18rem; height: 25rem;">
             <span class="bg-danger text-center mt-5 mb-4"><i class="fas fa-lock text-light mb-4" style="font-size: 40px;"></i></span>
             <div class="card-body">
               <h5 class="card-title text-center">Pixel Perfect Design</h5>
@@ -106,10 +213,10 @@
         <section id="three">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 m-0 p-0">
+                    <div class="col-sm-12 col-lg-3 m-0 p-0 animate__animated animate__fadeInDown">
                         <img src="img/img-three-1.jpg" class="card-img-top rounded-0 h-100" alt="...">
                    </div>
-                    <div class="col-sm-12 col-lg-3 p-0">
+                    <div class="col-sm-12 col-lg-3 p-0 animate__animated animate__fadeInDown" style="animation-delay: .2s;">
                         <div class="card px-4 rounded-0 d-flex h-100 justfy-content-center" style="background-color: #1C1C1C;height: 65vh;">
                             <div class="card-body px-4">
                                 <p class="card-text text-secondary p-1 pt-5">Build perfect websites</p>
@@ -119,10 +226,10 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 m-0 p-0">
+                    <div class="col-sm-12 col-lg-3 m-0 p-0 animate__animated animate__fadeInDown" style="animation-delay: .4s;">
                         <img src="img/img-three-2.png" class="card-img-top rounded-0 h-100" alt="...">
                     </div>
-                    <div class="col-sm-12 col-lg-3 m-0 p-0 rounded-0">
+                    <div class="col-sm-12 col-lg-3 m-0 p-0 rounded-0 animate__animated animate__fadeInDown" style="animation-delay: .6s;">
                         <div class="card px-4 rounded-0 d-flex h-100 justfy-content-center" style="background-color: #1C1C1C;height: 65vh;">
                             <div class="card-body px-4">
                                 <p class="card-text text-secondary pt-5">Unique digital experiences</p>
@@ -137,6 +244,115 @@
             </div>
         </section>
         <!-- End Section Three -->
+<!-- Start three-four-among -->
+<section id="among">
+  <div class="row d-flex align-items-center justfy-content-center my-5" style="width: 70%;">
+    <div class="among-col d-flex justify-content-center py-5" style="width: 100%; padding-left: 450px;">
+        <div class="col-sm-12 col-lg-2 me-4"><a href="#" class="link-dark text-uppercase text-bold" style="text-decoration:underline;">All</a></div>
+        <div class="col-sm-12 col-lg-2 me-4"><a href="#" class="link-dark text-uppercase text-bold">Web</a></div>
+        <div class="col-sm-12 col-lg-2 me-5"><a href="#" class="link-dark text-uppercase text-bold">Advertising</a></div>
+        <div class="col-sm-12 col-lg-2 mx-4"><a href="#" class="link-dark text-uppercase text-bold">Branding</a></div>
+        <div class="col-sm-12 col-lg-2 me-4"><a href="#" class="link-dark text-uppercase text-bold">Design</a></div>
+        <div class="col-sm-12 col-lg-2 me-4"><a href="#" class="link-dark text-uppercase text-bold">Photography</a></div>
+   </div>
+</div>
+
+  <div class="row d-flex w-100 ps-4 mt-5">
+
+    <div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: .5s;">
+      <a href="" target="_blank">
+        <div class="content-overlay"></div>
+            <img src="img/8-li/portfolio-item-1.jpg" class="content-image" style="width:100%;" alt="">
+        <div class="content-details fadeIn-bottom">
+            <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+            <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+        </div>
+      </a>
+  </div>
+   
+  <div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 1s;">
+    <a href="" target="_blank">
+      <div class="content-overlay"></div>
+          <img src="img/8-li/portfolio-item-2.jpg" class="content-image" style="width:100%;" alt="">
+      <div class="content-details fadeIn-bottom">
+          <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+          <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+      </div>
+    </a>
+</div>
+<div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 1.5s;">
+  <a href="" target="_blank">
+    <div class="content-overlay"></div>
+        <img src="img/8-li/portfolio-item-3.jpg" class="content-image" style="width:100%;" alt="">
+    <div class="content-details fadeIn-bottom">
+        <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+        <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+    </div>
+  </a>
+</div> <div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 2s;">
+  <a href="" target="_blank">
+    <div class="content-overlay"></div>
+        <img src="img/8-li/portfolio-item-4.jpg" class="content-image" style="width:100%;" alt="">
+    <div class="content-details fadeIn-bottom">
+        <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+        <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+    </div>
+  </a>
+</div>
+</div>
+
+<div class="row d-flex w-100 ps-4 mt-4">
+
+  <div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: .7s;">
+    <a href="" target="_blank">
+      <div class="content-overlay"></div>
+          <img src="img/8-li/portfolio-item-5.jpg" class="content-image" style="width:100%;" alt="">
+      <div class="content-details fadeIn-bottom">
+          <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+          <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+      </div>
+    </a>
+</div>
+ 
+<div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 1.2s;">
+  <a href="" target="_blank">
+    <div class="content-overlay"></div>
+        <img src="img/8-li/portfolio-item-6.jpg" class="content-image" style="width:100%;" alt="">
+    <div class="content-details fadeIn-bottom">
+        <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+        <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+    </div>
+  </a>
+</div>
+<div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 1.7s;">
+<a href="" target="_blank">
+  <div class="content-overlay"></div>
+      <img src="img/8-li/portfolio-item-7.jpg" class="content-image" style="width:100%;" alt="">
+  <div class="content-details fadeIn-bottom">
+      <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+      <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+  </div>
+</a>
+</div> <div class="content col-sm-12 col-lg-3 animate__animated animate__fadeInBottomLeft" style="animation-delay: 2.2s;">
+<a href="" target="_blank">
+  <div class="content-overlay"></div>
+      <img src="img/8-li/portfolio-item-8.jpg" class="content-image" style="width:100%;" alt="">
+  <div class="content-details fadeIn-bottom">
+      <h3 class="text-uppercase text-center text-dark content-title">Naked Soap</h3>
+      <p class="text-uppercase text-center text-secondary">Web And Photography</p>
+  </div>
+</a>
+</div>
+</div>
+
+   
+
+
+</div>
+</section>
+<!-- End three-four-among -->
+
+
         <!-- Start Section Four -->
          <section id="four" class="d-flex align-items-center">
              <div class="container">
@@ -150,7 +366,7 @@
                          <p class="border-bottom pb-2 text-secondary"><span><i class="fas fa-check me-3"></i>Unlimited power and customization possibilities</span></p>
                          <button type="button" class="btn  btn-outline-light bg-dark text-uppercase mt-4 px-4"><span><i class="fas fa-play"></i></span> All advantages</button>
                      </div>
-                     <div class="col-sm-12 col-four-nd col-lg-6 ms-5 ">
+                     <div class="col-sm-12 col-four-nd col-lg-6 ms-5">
                          <img src="img/explore-work-02.png" class="card-img-top img-fluid" alt="">
                      </div>
                  </div>
@@ -161,7 +377,7 @@
         <section id="five" style="background-color: #EEEFF1;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-6 m-0 p-0">
+                    <div class="col-sm-12 col-lg-6 m-0 p-0 animate__animated animate__fadeInLeft">
                      <div class="container">
                          <h1 class="five-h1 my-5 ms-5" style="width: 70%;font-size: 50px;">We are delivering beautiful digital products for you</h1>
                    
@@ -206,13 +422,10 @@
                               </div>
                         </div>   
                      </div>
-
-                       
-
                      </div>
                     </div>
 
-                    <div class="col-sm-12 col-lg-6 m-0 p-0">
+                    <div class="col-sm-12 col-lg-6 m-0 p-0 animate__animated animate__fadeInRight">
                         <img src="img/img-four.jpg" class="card-img-top img-fluid rounded-0" alt="" style="height: 100vh;">
                     </div>
 
@@ -228,7 +441,7 @@
                 <span class="line mb-5 mt-4"></span>
                <div class="row mt-5 mb-5">
 
-                   <div class="col-six col-sm-12 col-lg-4">
+                   <div class="col-six col-sm-12 col-lg-4 animate__animated animate__fadeInUp">
                     <div class="card rounded-0 border-0">
                         <img src="img/img-six-1.jpg" class="card-img-top" style="height: 300px;" alt="...">
                         <div class="hover-content text-center text-light d-flex align-items-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
@@ -240,7 +453,7 @@
                     
                    </div>
 
-                   <div class="col-six col-sm-12 col-lg-4">
+                   <div class="col-six col-sm-12 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: .5s;">
                     <div class="card rounded-0 border-0">
                         <img src="img/img-six-2.jpg" class="card-img-top" style="height: 300px;" alt="...">
                         <div class="hover-content text-center text-light d-flex align-items-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
@@ -251,7 +464,7 @@
                       </div>
                    </div>
 
-                   <div class="col-six col-sm-12 col-lg-4">
+                   <div class="col-six col-sm-12 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: 1s;">
                     <div class="card rounded-0 border-0">
                         <img src="img/img-six-3.jpg" class="card-img-top" style="height: 300px;" alt="...">
                         <div class="hover-content text-center text-light d-flex align-items-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
@@ -266,8 +479,6 @@
              </div>
          </section>
          <!-- End Section Six -->
-
-
          <!-- Start Section Seven -->
          <section id="seven" class="d-flex align-items-center">
             <div class="container">
@@ -293,7 +504,7 @@
           <div class="container">
             <div class="col-box d-flex align-items-center">
 
-              <div class="col d-flex">
+              <div class="col d-flex animate__animated animate__fadeInRight">
                 <span><i class="fas fa-tv text-secondary me-4" style="font-size: 40px;"></i></span>
                 <div class="col-box-content-eight text-secondary">
                   <h2 class="num" style="color: #000 !important;">350</h2>
@@ -301,7 +512,7 @@
                 </div>
               </div>
 
-              <div class="col d-flex">
+              <div class="col d-flex animate__animated animate__fadeInRight">
                 <span><i class="fas fa-camera-retro text-secondary me-4" style="font-size: 40px;"></i></span>
                 <div class="col-box-content text-secondary">
                   <h2 class="num" style="color: #000 !important;">780</h2>
@@ -309,7 +520,7 @@
                 </div>
               </div>
 
-              <div class="col d-flex">
+              <div class="col d-flex animate__animated animate__fadeInRight">
                 <span><i class="fas fa-laptop text-secondary me-4" style="font-size: 40px;"></i></span>
                 <div class="col-box-content text-secondary">
                   <h2 class="num" style="color: #000 !important;">850</h2>
@@ -317,7 +528,7 @@
                 </div>
             </div>
 
-              <div class="col d-flex">
+              <div class="col d-flex animate__animated animate__fadeInRight">
                 <span><i class="fas fa-comment-dots text-secondary me-4" style="font-size: 40px;"></i></span>
                 <div class="col-box-content text-secondary">
                   <h2 class="num" style="color: #000 !important;">650</h2>
@@ -386,7 +597,7 @@
              <span class="line mb-5 mt-4"></span>
             <div class="row mt-5 mb-5 pb-5">
 
-                <div class="col-sm-12 col-lg-3">
+                <div class="col-sm-12 col-lg-3 animate__animated animate__fadeInUp">
                  <div class="card rounded-0 border-0">
                    <div class="zoom-img">
                        <img src="img/latest-blog5.jpg" class=" img-st card-img-top img-fluid" style="height: 200px;" alt="...">
@@ -400,7 +611,7 @@
                    </div>
               </div>
 
-                <div class="col-sm-12 col-lg-3">
+                <div class="col-sm-12 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 0ms;">
                  <div class="card rounded-0 border-0">
                       <div class="zoom-img">
                          <img src="img/latest-blog6.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">
@@ -413,7 +624,7 @@
                    </div>
                 </div>
 
-                <div class="col-sm-12 col-lg-3">
+                <div class="col-sm-12 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: .5s;">
                  <div class="card rounded-0 border-0">
                       <div class="zoom-img">
                         <img src="img/latest-blog7.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">
@@ -426,7 +637,7 @@
                    </div>
                 </div>
 
-                <div class="col-sm-12 col-lg-3">
+                <div class="col-sm-12 col-lg-3 animate__animated animate__fadeInUp" style="animation-delay: 1.5s;">
                   <div class="card rounded-0 border-0">
                        <div class="zoom-img">
                           <img src="img/latest-blog8.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">

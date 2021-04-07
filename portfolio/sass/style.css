@@ -1,12 +1,69 @@
-section#one {
-  height: 100vh;
-  position: relative;
+header .navbar {
+  top: 0;
+  position: absolute;
+  background: none;
 }
 
-section#one .icon {
-  position: absolute;
-  right: 0;
-  top: 140px;
+@media only screen and (max-width: 720px) {
+  header .icon {
+    display: none !important;
+  }
+  header .navbar-toggler {
+    opacity: 1 !important;
+    top: 10px !important;
+    background: none;
+    border: none;
+    right: 0;
+    position: absolute;
+    visibility: visible !important;
+  }
+  header .navbar-toggler .nav-none {
+    display: inline-block !important;
+  }
+  header .navbar-toggler .navbar-toggler-icon {
+    display: inline-block !important;
+  }
+  header .navbar-toggler .search {
+    display: inline-block !important;
+  }
+  header .navbar {
+    width: 100% !important;
+  }
+  header .navbar .container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  header .navbar .container .container-fluid {
+    width: 100% !important;
+  }
+  header .navbar-nav {
+    background-color: #191818 !important;
+    height: 40% !important;
+    width: 660px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+  }
+  header .navbar-nav .nav-media {
+    display: none !important;
+  }
+  header .navbar-nav .nav-link {
+    width: 100% !important;
+  }
+  header .navbar-nav .nav-item {
+    font-size: 14px;
+  }
+  header .navbar-nav .nav-item .chevron-nav {
+    display: inline-block !important;
+  }
+  header .navbar-nav .nav-border {
+    border-bottom: 2px solid #808080;
+  }
+}
+
+.icon {
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,24 +73,122 @@ section#one .icon {
           flex-direction: column;
 }
 
-section#one .icon span {
+.icon .icon-com {
   width: 50px;
   height: 30px;
   background-color: #fff;
-  margin-bottom: 20px;
   padding: 0 15px;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  -webkit-box-shadow: 2px #000;
+          box-shadow: 2px #000;
 }
 
-section#one .icon span.icon-1:hover {
-  width: 120px;
-  background-color: #ff214f;
+.icon .icon-1 {
+  top: 140px;
+  position: fixed;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  overflow: hidden;
 }
 
-section#one .icon span.icon-2:hover {
-  width: 120px;
+.icon .icon-2 {
+  top: 190px;
+  position: fixed;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  overflow: hidden;
+}
+
+.icon span.icon-1:hover {
+  width: 150px;
   background-color: #ff214f;
+  overflow: visible;
+}
+
+.icon span.icon-2:hover {
+  width: 210px;
+  background-color: #ff214f;
+  overflow: visible;
+}
+
+.content {
+  position: relative;
+  width: 25%;
+}
+
+.content .content-overlay {
+  background: white;
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 70%;
+  left: 50%;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 720px) {
+  .content {
+    width: 100% !important;
+    margin-bottom: 30px !important;
+  }
+  .among {
+    height: auto !important;
+  }
+  .among .row {
+    width: 100% !important;
+  }
+  .among-col {
+    text-align: center !important;
+    padding-left: 200px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.text-bold {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+section#one {
+  height: 100vh;
+  position: relative;
 }
 
 @media only screen and (max-width: 720px) {
