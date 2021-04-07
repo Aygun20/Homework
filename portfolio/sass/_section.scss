@@ -286,6 +286,7 @@ section#two{
 
 // Start Section Four
 section#four{
+    width: 100%;
     height: 100vh;
     button :hover{
         background-color: #fff !important;
@@ -394,7 +395,7 @@ section#six{
 section#seven{
     background-image: url('../img/img-seven-1.png');
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
