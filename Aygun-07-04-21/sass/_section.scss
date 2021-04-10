@@ -46,7 +46,9 @@ header{
     
     section#home{
         height: 100vh;
-        background: url('img/bg.jpg') no-repeat center;
+        background-image: url('img/bg.jpg');
+        background-repeat:  no-repeat;
+        background-position:  center;
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
