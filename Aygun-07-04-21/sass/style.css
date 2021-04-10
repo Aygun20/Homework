@@ -1,0 +1,341 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover-white :hover {
+  color: #fff !important;
+}
+
+header {
+  height: 100vh;
+}
+
+header .hover-blue :hover {
+  color: #48dbfb !important;
+}
+
+header .sticky {
+  background-color: #000 !important;
+  padding: 1.8rem 0;
+}
+
+header .navbar {
+  padding: 2rem 0;
+  z-index: 999;
+  background-color: transparent;
+  top: 0;
+}
+
+header .navbar .nav-link {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  font-weight: 500;
+  color: #fff !important;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+header .navbar .nav-link :hover {
+  color: #48dbfb !important;
+}
+
+header .navbar img {
+  background-size: contain !important;
+  width: 5rem;
+}
+
+header section#home {
+  height: 100vh;
+  background: url("/img/bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+header section#home .inner-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header section#home .inner-width .h1 ::after {
+  content: 'Darkcode';
+  -webkit-animation: textanim 5s linear infinite;
+          animation: textanim 5s linear infinite;
+  margin-left: 2rem;
+}
+
+header section#home .inner-width .social-tab {
+  font-size: 2.2rem;
+  margin: 0 1rem;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+header section#home .inner-width .social-tab a {
+  color: #fff;
+}
+
+header section#home .inner-width .social-tab :hover {
+  color: #48dbfb !important;
+}
+
+header section#home .inner-width button {
+  margin: 1.5rem 3rem;
+  width: 18rem;
+  font-weight: 500;
+  padding: 1.4rem 0;
+  font-size: 1.5rem;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  border-radius: .6rem;
+}
+
+header section#home .inner-width .btn-1 :hover {
+  color: #fff !important;
+}
+
+header section#home .inner-width .btn-2 :hover {
+  color: #fff !important;
+  background: none !important;
+}
+
+@-webkit-keyframes textanim {
+  25% {
+    content: 'A Developer';
+  }
+  50% {
+    content: 'A Designer';
+  }
+  75% {
+    content: 'A Youtuber';
+  }
+}
+
+@keyframes textanim {
+  25% {
+    content: 'A Developer';
+  }
+  50% {
+    content: 'A Designer';
+  }
+  75% {
+    content: 'A Youtuber';
+  }
+}
+
+section#starbucks {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+section#starbucks .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #017143;
+  -webkit-clip-path: circle(55rem at right 80rem);
+          clip-path: circle(55rem at right 80rem);
+}
+
+section#starbucks .sci {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section#starbucks .sci li a {
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  margin: .5rem 0;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section#starbucks .thumb {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 10rem !important;
+}
+
+section#starbucks .thumb li {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 10rem 2rem;
+}
+
+section#starbucks .thumb li :hover {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+section#starbucks .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section#starbucks .content .text-box {
+  position: relative;
+}
+
+section#starbucks .content .text-box p {
+  font-size: 1.6rem;
+}
+
+section#starbucks .content .text-box h2 {
+  font-size: 5.5rem !important;
+  font-weight: 500;
+  line-height: 8rem;
+}
+
+section#starbucks .content .text-box h2 span {
+  font-weight: 900;
+  color: #017143;
+  font-size: 1.4em;
+}
+
+section#card {
+  height: 100vh;
+}
+
+section#card .card {
+  position: relative;
+}
+
+section#card .card .img-box {
+  position: relative;
+  top: -6rem;
+  left: 2rem;
+}
+
+section#card .card .card-body {
+  position: relative;
+  color: #111;
+  visibility: hidden;
+  margin-top: -14rem;
+  padding: 1rem 1.5rem;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  background-color: #fff;
+}
+
+section#card .card:hover .card-body {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -2rem;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 8px;
+  }
+  section#card {
+    max-width: 720px;
+    height: auto !important;
+    padding-top: 5rem !important;
+    margin: 0 0 0 4rem !important;
+    padding: 5rem !important;
+  }
+  section#card .card {
+    margin: 5rem 0 !important;
+    width: 90% !important;
+  }
+  section#card .card .img-box {
+    width: 90% !important;
+  }
+}
+
+footer {
+  position: relative;
+}
+
+footer .aboutus {
+  position: relative;
+}
+
+footer .col-social :hover {
+  background-color: #f00 !important;
+}
+
+footer .quickLinks {
+  position: relative;
+  width: 15%;
+}
+
+footer .quickLinks ul li a :hover {
+  color: #fff;
+}
+
+footer .quickLinks ul li a {
+  color: #999;
+}
+
+footer .conatct {
+  width: calc(35% -6rem) !important;
+  margin-right: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    padding: 4rem;
+  }
+  footer .container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer .container .aboutus, footer .container .quickLinks, footer .container .conatct {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

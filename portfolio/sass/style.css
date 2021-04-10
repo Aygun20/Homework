@@ -254,7 +254,7 @@ section#two .card span {
 
 @media only screen and (max-width: 720px) {
   section#two {
-    height: 270vh;
+    height: 400vh;
     max-width: 720px;
   }
   section#two .card-box {
@@ -284,10 +284,10 @@ section#two .card span {
     text-align: center;
   }
   section#three img {
-    height: 45vh !important;
+    height: 80vh !important;
   }
   section#three .card {
-    height: 47vh !important;
+    height: 60vh !important;
     margin: 0;
   }
   section#three .card .card-body {
@@ -430,7 +430,7 @@ section#seven {
 
 @media only screen and (max-width: 720px) {
   section#seven {
-    height: 130vh;
+    height: 150vh;
   }
   section#seven .col-four-nd {
     width: 100% !important;

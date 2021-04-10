@@ -233,11 +233,11 @@ section#two{
 }
 @media only screen and (max-width:720px){
     section#two{
-        height: 270vh;
+        height: 400vh;
         max-width:720px;
         .card-box{
-            flex-direction: column;
-            .card{
+             flex-direction: column;
+            .card{             
                 width: 480px !important;
                 height: 360px !important;
                 margin-bottom: 30px;
@@ -265,10 +265,10 @@ section#two{
     section#three{
         text-align: center;
         img{
-            height: 45vh !important;
+            height: 80vh !important;
         }
         .card{
-            height: 47vh !important;
+            height: 60vh !important;
             margin: 0;
            .card-body {
                padding: 0 !important;
@@ -406,7 +406,7 @@ section#seven{
     }
     @media only screen and (max-width:720px){
         section#seven{
-            height: 130vh;
+            height: 150vh;
             .col-four-nd{
                 width: 100% !important;
                 h1{
