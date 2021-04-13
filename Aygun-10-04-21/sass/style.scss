@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+// Variable
+$vanil : #c9ab81;
+$purple:#6f42c1;
+// Variable
+
+
+html{
+font-size: 10px;
+font-family: 'Poppins', sans-serif;
+}
+.vanil{
+ color: $vanil;
+}
+.gray{
+  color: #7b888b;
+}
+.bg-vanil{
+    background-color: $vanil;
+}
+.cursor{
+    cursor: pointer;
+}
+.vanil :hover{
+background-color: none;
+}
+.miniver{
+    font-family: 'Miniver', cursive;
+} 
+a{
+    text-decoration: none;
+}
+
+ul{
+list-style: none;
+}
+.transition{
+    transition: .8s all ease-in-out;
+}
+.hover :hover{
+color: lighten($vanil,5%) !important;
+}
+header .sticky{
+  background-color: #000 !important;
+  padding:1.5rem !important;
+  transition: .8s;
+}
+@mixin space-center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-item-dropdown {
+    position: relative;
+    
+    &:hover > .dropdown-menu {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: -1rem;
+    display: none;
+    opacity: 0;
+    }
+  
+  .dropdown-menu-item { 
+    &:hover {
+      background-color: lighten($vanil,7%);
+    }
+  }
+   @media only screen and (max-width:600px){
+    .navbar-nav{
+      background-color: #240c3c !important;
+      right: -2rem;
+      top: -6rem;
+      padding-top: 3rem;
+      position: relative;
+      width: 50% !important;
+      height: 100vh !important;
+      .dropdown-menu{
+        top:0 !important;
+      }
+      .dropdown-menu-item{
+        background-color:#240c3c !important ;
+        a{
+          color: #fff !important;
+        }
+      }
+      .nav-item{
+        border-bottom: 1px solid $purple;
+        margin-left: 2rem !important;
+      }
+      
+    }
+   }
+   @media only screen and (max-width:600px){
+  .dark{
+     flex-direction: column !important;
+     height: 60vh !important;
+   }
+  }
+ 
+  @media only screen and (max-width:600px){
+    section#about{
+.col-md-6{
+  @include space-center();
+  .img-box :hover{
+transform: translateY(1.5rem);
+  }
+  .img2{
+    margin-bottom: 3rem !important;
+        }
+   }
+  }
+    }
+
+    @media only screen and (max-width:600px){
+      section#menu{
+  .card{
+   width: 50rem !important;
+        }
+      }
+   }
+   @media only screen and (max-width:600px){
+    section#news{
+      .col-md-4{
+        width: 100% !important;
+      }
+      .card-one{
+        width: 60rem !important;
+      }
+      .card{
+      width: 60rem !important;
+      justify-content: center !important;
+      }
+     }
+ }
+
+   @media only screen and (max-width:1100px){
+    .book h2{
+      font-size: 1.5rem !important;
+    } 
+    .home-content{
+       @include space-center();
+       width: 100% !important;
+       h1{
+         width: 100% !important;
+         text-align: center !important;
+       }
+     }
+   }
+section#special{
+ button{
+   margin-bottom: 5rem !important;
+ }
+
+}
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  //Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/* Wobble Horizontal */
+@keyframes wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.wobble-horizontal {
+  display: inline-block;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    animation-name: wobble-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+}
+@keyframes hang {
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(6px);
+  }
+}
+
+/* Wobble Vertical */
+@keyframes wobble-vertical {
+  16.65% {
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    transform: translateY(1px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wobble-vertical {
+  display: inline-block;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    animation-name: wobble-vertical;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+}
+/* Icon Spin */
+.hvr-icon-spin {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  // overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-right: 1rem;
+}
+.hvr-icon-spin:before {
+  content: " ";
+  position: absolute;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.hvr-icon-spin:hover:before, .hvr-icon-spin:focus:before, .hvr-icon-spin:active:before {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+
+

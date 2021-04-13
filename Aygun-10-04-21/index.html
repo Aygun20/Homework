@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Sassio</title>
+  </head>
+  <body>
+    <header>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top  d-flex flex-row pt-5 px-4">        
+          <img src="img/logo1.png"  class="card-img-top img-fluid"  alt="" style="width: 20rem;">
+          <button class="btn btn-dark bg-vanil px-4 py-3 rounded-0 d-md-none d-lg-none d-sm-block"><h4 class="text-uppercase py-2" style="letter-spacing: .1rem;"><span><i class="fas fa-calendar-alt"></i></span> Book A Table</h4> </button>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="font-size: 2rem;"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <button type="button" class="btn-close my-5 mx-2 d-sm-inline-block d-lg-none d-xxl-none" style="font-size: 2rem; color: red;" aria-label="Close"></button>
+                <span aria-hidden="true">&times;</span> -->
+                <li class="dropdown-menu-item cursor  py-3 mb-4 ps-5 d-md-none d-lg-none d-sm-block">
+                  <img src="img/logo1.png"  class="card-img-top img-fluid"  alt="" style="width: 20rem;">
+                </li>
+                <li class="nav-item nav-item-dropdown">
+                    <a class="dropdown-trigger" href="#"><p class="hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" aria-current="page" href="#">Home <span><i class="fas fa-plus vanil"></i></span></a></p></a>
+                    <ul class="dropdown-menu mt-5 p-0 border-0  bg-light" style="width: 24rem;">
+                      <li class="dropdown-menu-item cursor py-3 ps-5 border-bottom">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 1<a>
+                      </li>
+                      <li class="dropdown-menu-item cursor py-3 ps-5 border-bottom"">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 2</a>
+                      </li>
+                      <li class="dropdown-menu-item cursor py-3 ps-5">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item nav-item-dropdown transition">
+                    <a class="dropdown-trigger" href="#"><p class="hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" aria-current="page" href="#">About<span><i class="fas fa-plus vanil ms-2"></i></span></a></p></a>
+                   <ul class="dropdown-menu mt-5 p-0 border-0 bg-light" style="width: 24rem;">
+                      <li class="dropdown-menu-item cursor py-3 ps-5 border-bottom">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 1</a>
+                      </li>
+                      <li class="dropdown-menu-item cursor py-3 ps-5 border-bottom">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 2</a>
+                      </li>
+                      <li class="dropdown-menu-item cursor py-3 ps-5">
+                        <a href="#" class="text-dark" style="font-size: 1.9rem;">Dropdown 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                <li class="nav-item text-uppercase">
+                  <p class=" hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" href="#">Menu</a></p>
+                </li>
+                <li class="nav-item text-uppercase">
+                  <p class="hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" href="#">Price</a></p>
+                </li>
+                <li class="nav-item text-uppercase">
+                  <p class="hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" href="#">News</a></p>
+                </li>
+                <li class="nav-item text-uppercase">
+                  <p class="hover transition"><a style="font-size: 1.9rem;font-weight: 600;" class="nav-link text-light me-5" href="#">Contact</a></p>
+                </li>
+              </ul>
+              <li class="nav-item text-uppercase">
+                <button class="btn btn-outline-light bg-vanil border-0 px-5 py-4 rounded-0"><h2 class="text-uppercase py-2" style="letter-spacing: .1rem;"><span><i class="fas fa-calendar-alt"></i></span> Book A Table</h2> </button>
+               </li>
+            </div>
+        </nav>
+        <!-- Home -->
+        <section id="home" class="w-100 img-fluid d-flex align-items-center" style="background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)), url('img/header.jpg');background-size: cover;background-position: center; height: 120vh;">
+           <div class="container">
+               <div class="row">
+                 <div class="home-content ">
+                    <h3 class="vanil miniver animate__animated animate__fadeInDown">Welcome To Our Restaurant</h3>
+                    <h1 class="text-uppercase text-light  animate__animated animate__fadeInDown" style="font-size: 8.5rem; width: 50%;animation-duration: 1s;">The Food Heaven</h1>
+                    <div class="btn-box  animate__animated animate__fadeInDown" style="animation-delay: .5s;">
+                    <button class="btn btn-outline-light bg-vanil border-0 py-3 px-4 me-5 mt-5 rounded-0"><h3 class="text-uppercase py-2" style="letter-spacing: .1rem;">Book A Table</h3> </button=>
+                    <button class="btn btn-outline-light bg-vanil border-0 py-3 px-4 mt-5 rounded-0"><h3 class="text-uppercase py-2" style="letter-spacing: .1rem;">Check Menus</h3> </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+        <!-- end navbar -->
+    </header>  
+    <!-- Start Section#Card -->
+    <section id="three-card d-flex flex-row m-0 " style="overflow-x:hidden ; margin-top:-14vh;left:8%;background: none;">
+      <div class="container d-flex flex-row">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="card d-flex text-light border-0 rounded-0 flex-row border-0 py-4 px-5" style="background-color: #0E1415;">
+              <a href="#" class="hvr-icon-spin pt-4"><i class="vanil hvr-icon-spin fas fa-utensils-alt"  style="font-size: 6.5rem;margin-right: 5rem;"></i></a>
+              <div class="card-body ms-4">
+                <h2 class="card-title mb-3 pt-4">BEST FOOD QUALITY</h2>
+                <p class="card-text text-secondary pb-4" style="font-size: 1.9rem;">They still serve tasty tehari with shorisha (mustard) oil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card d-flex text-light border-0 rounded-0 flex-row border-0 py-4 px-5" style="background-color: #0E1415;">
+              <a href="#" class="hvr-icon-spin pt-4"><i class="vanil hvr-icon-spin fas fa-utensils-alt"  style="font-size: 6.5rem;margin-right: 5rem;"></i></a>
+              <div class="card-body ms-4">
+                <h2 class="card-title mb-3 pt-4">UNLIMITED FOOD ITEMS</h2>
+                <p class="card-text text-secondary pb-4" style="font-size: 1.9rem;">They still serve tasty tehari with shorisha (mustard) oil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card d-flex text-light border-0  rounded-0 flex-row border-0 py-4 px-5" style="background-color: #0E1415;">
+              <a href="#" class="hvr-icon-spin pt-4"><i class="vanil hvr-icon-spin fas fa-utensils-alt"  style="font-size: 6.5rem;margin-right: 5rem;"></i></a>
+              <div class="card-body ms-4">
+                <h2 class="card-title mb-3 pt-4">SET MENU PLATTER</h2>
+                <p class="card-text text-secondary pb-4" style="font-size: 1.9rem;">They still serve tasty tehari with shorisha (mustard) oil.</p>
+              </div>
+            </div> 
+          </div>       
+        </div>
+      </div>
+    </section>
+    <div class="dark w-100" style="padding:7rem 0;background-color:#090D0E;position: absolute;top:120vh;z-index: -8888;"></div>
+        <!-- End Section#Card -->
+        <!-- Start About -->
+   <section id="about" class="w-100 d-flex align-items-center justify-content-center" style="padding: 10rem 0; overflow: hidden;background-color: #090D0E;">
+     <div class="con" style="width: 85%;">
+       <div class="row">
+
+           <div class="col-lg-6">
+             <div class="row">
+               <div class="col-md-6">
+                <div class="img-box" style="position: relative;">
+                  <img src="img/abt1.jpg" style="width: 28rem;" alt="">
+                  <!-- <div class="overlay-box h-100" style="width: 28rem;position: absolute;top:0;background-color: #55acee;">shbb</div> -->
+                </div>
+               </div> 
+      
+
+               <div class="col-md-6">
+                <div class="mt-5 img2"><img src="img/abt2.jpg" style="width: 28rem;" alt=""></div>
+               </div>
+             </div>
+
+             <div class="row">
+              <div class="col-md-6">
+               <div class=""><img src="img/abt3.jpg" style="width: 28rem;" alt=""></div>
+              </div>
+              <div class="col-md-6">
+               <div class="mt-5"><img src="img/abt4.jpg" style="width: 28rem;" alt=""></div>
+              </div>
+            </div>
+           </div>
+          
+            <div class="col-lg-6 h-100 d-flex flex-column ps-5" style="margin-top: 15rem;">
+              <h2 class="vanil miniver">About Us</h2>
+              <h1 class="text-uppercase text-light mb-4" style="font-size: 7rem;width: 90%;">SPECIALIZED IN SPICY MODERN</h1>
+              <h6 class="text-secondary display-6" style="font-weight: 500;font-size: 1.8rem;">In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch, and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport restaurants).</h6>
+              <button type="button" class="btn btn-outline-light px-5 py-4 mt-5 border-0 rounded-0 bg-vanil" style="width: 20rem;"><h3 class="text-uppercase py-2" style="letter-spacing: .1rem;">Check Menus</h3> </button>
+             </div> 
+          </div>
+       </div>
+      </div>
+    </section>
+        <!-- End About -->
+
+        <!-- Start Special -->
+
+    <section id="special" class="w-100 d-flex align-items-center justify-content-center" style="padding:10rem 0;overflow-y: hidden;background-color: #06090a;">
+      <div class="con" style="width: 85%;">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 img-hover  d-flex justify-content-center animate__animated animate__fadeInLeft" style="animation-duration: 1.5s;"><img src="img/abt5.jpg" alt=""></div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center flex-column text-center" style="margin-top: 6%;">
+              <h2 class="vanil miniver">About Us</h2>
+              <h1 class="text-uppercase text-light mb-4" style="font-size: 7rem;">OUR BEST SPECIALTIES</h1>
+              <h6 class="text-secondary display-6" style="font-weight: 500;font-size: 1.8rem;width: 90%;line-height: 3rem;">In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast.</h6>
+              <button type="button" class="btn btn-outline-light px-5 py-4 mt-5 border-0 rounded-0 bg-vanil"><h3 class="text-uppercase py-2" style="letter-spacing: .1rem;">Check Menus</h3> </button>
+            </div>
+            <div class="col-md-3 col-sm-12 img-hover d-flex justify-content-center animate__animated animate__fadeInRight" style="animation-duration: 1.5s;"><img src="img/abt6.jpg" alt=""></div>
+          </div>
+       </div>
+     </section>
+        <!-- End Special -->
+
+     <!-- Start Menu -->
+
+   <section id="menu" class="w-100 d-flex align-items-center" style="padding: 10rem 0; overflow: hidden;background-color: #090d0e;">
+      <div class="container">
+      <h2 class="vanil miniver">Our Menus</h2>
+      <h1 class="text-uppercase text-light mb-4" style="font-size: 6.8rem;">SPECIAL MENUS</h1>
+      <div class="row">
+        <div class="col-4 me-5" style="width: 40rem;">
+          <div class="card border-0 " style="background: none;">
+            <div class="d-flex flex-row align-items-center justify-content-between" style="border-bottom: .3rem gray dashed;">
+              <img src="img/fd1.png" class="img-fluid me-5 py-5" style="width: 8.5rem;" alt="">
+              <h1 class="text-uppercase text-light me-5" style="font-size: 3rem;">NOODLES</h1>
+              <span class="rounded-circle vanil bg-dark ms-5" style="width: 5rem;height:5rem;font-size:2rem;line-height:5rem;text-align: center;margin-right: 0;">10</span>
+            </div>
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 me-5" style="width: 40rem;">
+          <div class="card border-0 " style="background: none;">
+            <div class="d-flex flex-row align-items-center justify-content-between" style="border-bottom: .3rem gray dashed;">
+              <img src="img/fd2.png" class="img-fluid me-5 py-5" style="width: 10rem;" alt="">
+              <h1 class="text-uppercase text-light me-5" style="font-size: 3rem;">NOODLES</h1>
+              <span class="rounded-circle vanil bg-dark ms-5" style="width: 5rem;height:5rem;font-size:2rem;line-height:5rem;text-align: center;margin-right: 0;">10</span>
+            </div>
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 me-4" style="width: 40rem;">
+          <div class="card border-0 " style="background: none;">
+            <div class="d-flex flex-row align-items-center justify-content-between" style="border-bottom: .3rem gray dashed;">
+              <img src="img/fd3.png" class="img-fluid me-5 py-5" style="width: 10rem;" alt="">
+              <h1 class="text-uppercase text-light me-5" style="font-size: 3rem;">NOODLES</h1>
+              <span class="rounded-circle vanil bg-dark ms-5" style="width: 5rem;height:5rem;font-size:2rem;line-height:5rem;text-align: center;margin-right: 0;">10</span>
+            </div>
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+
+            <div class="row  py-5 border-bottom animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+              <div class="row-1 d-flex justify-content-between">
+                <h3 class="mb-4 text-light">BEEF BURGER MEAL</h3>
+                <h3 class="vanil">$41</h3>
+              </div>
+              <h4 class="text-secondary">Classic greek salad, barrel aged feta cheese, bread</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section> 
+                             <!-- End Menu -->
+
+                            
+                            <!-- Start News -->
+<section id="news d-flex align-items-center h-100" style="padding:0 0 10rem 0;overflow: hidden;;width: 100%;background-color: #090d0e;">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-sm-12 wobble-vertical align-items-center d-flex justify-content-center animate__animated animate__fadeInLeft" style="margin-top: 10%;margin-bottom: 5rem;animation-duration: 2s;">
+        <div class="card card-one d-flex align-items-center py-5 me-5" style="background-color: #06090a;">
+          <span class="vanil pt-5" style="font-size: 7rem;"><i class="fas fa-map-marked-alt"></i></span>  
+             <div class="card-body">
+                <h1 class="card-title text-light text-uppercase text-center">FIND US HERE</h1>
+                <p class="card-text text-secondary text-center" style="font-size: 1.8rem;">Avenue Marina 34568 NY (U.S)</p>
+                <p class="card-text text-secondary text-center" style="font-size: 1.8rem;">+1 374 474 637</p>
+                <p class="card-text text-secondary text-center pb-5" style="font-size: 1.8rem;">info@restaurant.com</p>
+              </div>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 me-5  d-flex justify-content-center">
+        <img src="img/lo1.jpg" class="card img-move img-fluid wobble-horizontal" style="height: 58rem;width: 42rem;" alt="">
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-md-12 wobble-vertical d-flex justify-content-center animate__animated animate__fadeInRight" style="margin-top: 10%;animation-duration: 2s;">
+        <div class="card d-flex align-items-center bg-vanil py-5 px-5">
+                <h1 class="card-title text-light text-uppercase text-center pt-5 pb-4">OPENING TIME</h1>
+                <ul class="text-light px-5 d-flex flex-column" style="font-size: 2rem;width: 100%;">
+                  <li class="mb-4">
+                    <span class="text-start" style="float: left;">MON</span>
+                    <span class="text-end" style="float: right;">17:00 to 23:00</span>
+                  </li>
+                  <li class="mb-4">
+                    <span class="text-start" style="float: left;">WED</span>
+                    <span class="text-end" style="float: right;">19:00 to 24:00</span>
+                  </li>
+                  <li class="mb-4">
+                    <span class="text-start" style="float: left;">THU</span>
+                    <span class="text-end" style="float: right;">14:00 to 18:00</span>
+                  </li>
+                  <li class="mb-4">
+                    <span class="text-start" style="float: left;">FRI</span>
+                    <span class="text-end" style="float: right;">16:00 to 24:00</span>
+                  </li>
+                  <li class="mb-4">
+                    <span class="text-start" style="float: left;">SAT/SUN</span>
+                    <span class="text-end" style="float: right;">20:00 to 4:00</span>
+                  </li>
+          
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact" style="margin-top: 9%;">
+    <div class="container d-flex flex-row align-items-center py-5 ps-5" style="background-color: #0D1213;">
+      <span class="vanil me-5" style="font-size: 9rem;"><i class="fas fa-envelope-open-text"></i></span>
+      <div class="contact-text d-flex flex-column">
+         <p class="miniver vanil" style="font-size: 2rem;">Appointment</p>
+         <h1 class="text-light" style="font-size: 4.5rem;">MAKE APPOINTMENT! <span class="vanil">+1 2 123456789</span></h1>
+    </div>
+    </div>
+  </div>
+</section>
+         <!-- End News -->
+                           <!-- Start Contact -->
+<section id="contact" class="w-100" style="padding-bottom:10rem;background-color: #06090a; overflow-x: hidden;">
+  <div class="container d-flex justify-content-center align-items-center border-bottom" style="height: 30vh;">
+    <img src="img/logo1.png" class="img-fluid" style="margin-top:10rem;margin-bottom: 5rem;" alt="">
+  </div>
+   <div class="row" style="margin-top: 6rem;margin-left:4rem;width: 90%;">
+     <div class="col-md-5 col-sm-12 d-flex flex-row">
+      <ul class="me-4 ps-5">
+        <li class="mb-5 gray text-end me-0 ps-5" style="font-size: 1.8rem;">Food from restaurants or groceries from top shops across Bangladesh Curated selection of dishes and household need</li>
+        <li class="mb-5 text-light fw-bold text-end" style="font-size: 2.2rem;">SOCIAL CONNECT</li>
+         <li class="text-end">
+       <span class="text-center me-3 p-4 text-light" style="font-size: 2rem;height: 6rem;line-height: 6rem;background-color: #3b5999;"><i class="mx-2 fab fa-facebook-f"></i></span>
+       <span class="text-center me-3 p-4 text-light" style="font-size: 2rem;height: 6rem;line-height: 6rem;background-color: #55acee;"><i class="fab fa-twitter"></i></span>
+       <span class="text-center me-3 p-4 text-light" style="font-size: 2rem;height: 6rem;line-height: 6rem;background-color: #cd201f;"><i class="fab fa-youtube"></i></span>
+         </li>
+      </ul>
+       <ul>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">HOME</li>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">MENU</li>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">RESERVATION</li>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">SHOP</li>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">NEWS</li>
+         <li class="mb-5 gray" style="font-size: 1.7rem;">CONTACT</li>
+       </ul>
+     </div>
+     <div class="col-md-4 col-sm-12 ps-5">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DvZ_A18CRgt1EzoHehB9v_T-3hnS9Jcy" width="400" height="350"></iframe>
+     </div>
+
+     <div class="col-md-3 col-sm-12">
+       <ul>
+        <li class="mb-5 text-light fw-bold" style="font-size: 2.2rem;">BLOG INSIGHTS</li>
+         <li class="gray mb-2" style="font-size: 2.2rem;">OUR TEAM IS EXPERIENCED IN PROJECT ESTIMATING, MANAGEMENT</li>
+         <li class="vanil mb-5" style="font-size: 1.6rem;">DECEMBER 21, 2020</li>
+         <li class="gray mb-2" style="font-size: 2.2rem;">OUR TEAM IS EXPERIENCED IN PROJECT ESTIMATING, MANAGEMENT</li>
+         <li class="vanil" style="font-size: 1.6rem;">DECEMBER 21, 2020</li>
+       </ul>
+    </div>
+   </div>
+</section> 
+                           <!-- End Contact -->
+
+<footer class="py-5 w-100" style="background-color: #000;"> 
+  <p class="text-center gray" style="font-size: 2rem;">COPYRIGHT BY <span class="vanil">@THEMEXRIVER</span> - 2020</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/9ist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
