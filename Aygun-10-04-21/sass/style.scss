@@ -9,6 +9,7 @@ $purple:#6f42c1;
 html{
 font-size: 10px;
 font-family: 'Poppins', sans-serif;
+overflow-x: hidden;
 }
 .vanil{
  color: $vanil;
@@ -78,7 +79,7 @@ header .sticky{
     .navbar-nav{
       background-color: #240c3c !important;
       right: -2rem;
-      top: -6rem;
+      top: 1rem;
       padding-top: 3rem;
       position: relative;
       width: 50% !important;
@@ -127,6 +128,19 @@ transform: translateY(1.5rem);
         }
       }
    }
+   @media only screen and (max-width:600px){
+    section#accordion{
+.accordion-title{
+width: 90% !important;
+margin-left: 5% !important;
+}
+.accordion{
+  width: 90% !important;
+  margin-left: 5% !important;
+
+}
+    }
+ }
    @media only screen and (max-width:600px){
     section#news{
       .col-md-4{

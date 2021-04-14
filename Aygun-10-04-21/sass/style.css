@@ -3,6 +3,7 @@
 html {
   font-size: 10px;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .vanil {
@@ -78,7 +79,7 @@ header .sticky {
   .navbar-nav {
     background-color: #240c3c !important;
     right: -2rem;
-    top: -6rem;
+    top: 1rem;
     padding-top: 3rem;
     position: relative;
     width: 50% !important;
@@ -137,6 +138,17 @@ header .sticky {
 @media only screen and (max-width: 600px) {
   section#menu .card {
     width: 50rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section#accordion .accordion-title {
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+  section#accordion .accordion {
+    width: 90% !important;
+    margin-left: 5% !important;
   }
 }
 

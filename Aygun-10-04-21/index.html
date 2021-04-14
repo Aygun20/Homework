@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Sassio</title>
   </head>
   <body>
-    <header>
+    <header> 
         <!-- start navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top  d-flex flex-row pt-5 px-4">        
           <img src="img/logo1.png"  class="card-img-top img-fluid"  alt="" style="width: 20rem;">
@@ -27,8 +28,6 @@
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <!-- <button type="button" class="btn-close my-5 mx-2 d-sm-inline-block d-lg-none d-xxl-none" style="font-size: 2rem; color: red;" aria-label="Close"></button>
-                <span aria-hidden="true">&times;</span> -->
                 <li class="dropdown-menu-item cursor  py-3 mb-4 ps-5 d-md-none d-lg-none d-sm-block">
                   <img src="img/logo1.png"  class="card-img-top img-fluid"  alt="" style="width: 20rem;">
                 </li>
@@ -114,7 +113,7 @@
             <div class="card d-flex text-light border-0 rounded-0 flex-row border-0 py-4 px-5" style="background-color: #0E1415;">
               <a href="#" class="hvr-icon-spin pt-4"><i class="vanil hvr-icon-spin fas fa-utensils-alt"  style="font-size: 6.5rem;margin-right: 5rem;"></i></a>
               <div class="card-body ms-4">
-                <h2 class="card-title mb-3 pt-4">UNLIMITED FOOD ITEMS</h2>
+                <h3 class="card-title mb-3 pt-4">UNLIMITED FOOD ITEMS</h3>
                 <p class="card-text text-secondary pb-4" style="font-size: 1.9rem;">They still serve tasty tehari with shorisha (mustard) oil.</p>
               </div>
             </div>
@@ -163,7 +162,7 @@
             </div>
            </div>
           
-            <div class="col-lg-6 h-100 d-flex flex-column ps-5" style="margin-top: 15rem;">
+            <div class="col-lg-6 h-100 d-flex flex-column ps-5" style="margin-top: 10%;">
               <h2 class="vanil miniver">About Us</h2>
               <h1 class="text-uppercase text-light mb-4" style="font-size: 7rem;width: 90%;">SPECIALIZED IN SPICY MODERN</h1>
               <h6 class="text-secondary display-6" style="font-weight: 500;font-size: 1.8rem;">In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch, and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport restaurants).</h6>
@@ -326,6 +325,200 @@
     </div>
   </section> 
                              <!-- End Menu -->
+<!-- Start Accordian Menu -->
+<section id="accordion" class="" style="background-color: #0D1213; width: 100%;height: 100%;padding-top: 10rem;">
+  <div class="accordion-title text-light text-uppercase text-center bg-vanil" style="width: 50%;margin-left: 30%;padding: 4rem 0;font-size: 3rem; background-color:;">Our Specialties</div>
+<div class="accordion accordion-flush d-flex  flex-column" style="width: 50%;margin-left: 30%;padding-bottom: 10rem;" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"></button>
+      <img src="img/plate.png" class="mx-5 pb-3" style="width: 5rem;" >
+      <span>Breakfast</span>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food1.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food2.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food3.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"></button>
+        <img src="img/tray.png" class="mx-5  pb-3" style="width: 5rem;" >
+        <span>Lunch</span>
+      </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food4.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food5.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food6.jpg" class="img-fluid" style="width: 12rem;height:12rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"></button>
+      <img src="img/fast-food.png" class="mx-5  pb-3" style="width: 5rem;" alt="">     
+      <span>Dinner</span>   
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row border-bottom py-7">
+          <div class="col-3"><img src="img/food1.jpg" class="img-fluid" style="width: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food8.jpg" class="img-fluid" style="width: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food9.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"></button>
+      <img src="img/martini.png" class="mx-5  pb-3" style="width: 5rem;" alt="">
+      <span>Drink</span>
+      </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food10.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food11.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food12.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"></button>
+      <img src="img/beer.png" class="mx-5  pb-3" style="width: 5rem;" alt="">
+      <span>Wine</span>
+      </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food13.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food14.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+
+        <div class="row border-bottom py-4">
+          <div class="col-3"><img src="img/food15.jpg" class="img-fluid" style="width: 14rem;height: 14rem;background-position: center;border-radius: 50%;" alt=""></div>
+          <div class="col-7">
+            <h1 style="font-size: 3rem;">Grilled Beef with potatoes</h1>
+            <p class="text-secondary" style="font-size: 2rem;">Meat, Potatoes, Rice, Tomatoe</p>
+          </div>
+          <div class="col-2" style="font-size: 3rem;"><h1>$29</h1><p style="width:4.5rem;height: .3rem;background-color:coral";></p></div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+</section>
+<!-- End Accordian Menu -->
 
                             
                             <!-- Start News -->
@@ -334,7 +527,7 @@
     <div class="row">
 
       <div class="col-lg-4 col-md-6 col-sm-12 wobble-vertical align-items-center d-flex justify-content-center animate__animated animate__fadeInLeft" style="margin-top: 10%;margin-bottom: 5rem;animation-duration: 2s;">
-        <div class="card card-one d-flex align-items-center py-5 me-5" style="background-color: #06090a;">
+        <div class="card card-one d-flex align-items-center py-5" style="background-color:#06090a; padding:0 6.5rem;">
           <span class="vanil pt-5" style="font-size: 7rem;"><i class="fas fa-map-marked-alt"></i></span>  
              <div class="card-body">
                 <h1 class="card-title text-light text-uppercase text-center">FIND US HERE</h1>
@@ -345,32 +538,32 @@
        </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 me-5  d-flex justify-content-center">
-        <img src="img/lo1.jpg" class="card img-move img-fluid wobble-horizontal" style="height: 58rem;width: 42rem;" alt="">
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+        <img src="img/lo1.jpg" class="card img-move img-fluid wobble-horizontal" style="height: 58rem;" alt="">
       </div>
 
-      <div class="col-lg-3 col-sm-12 col-md-12 wobble-vertical d-flex justify-content-center animate__animated animate__fadeInRight" style="margin-top: 10%;animation-duration: 2s;">
-        <div class="card d-flex align-items-center bg-vanil py-5 px-5">
+      <div class="col-lg-4 col-sm-12 col-md-12 wobble-vertical d-flex justify-content-center animate__animated animate__fadeInRight" style="margin-top: 10%;animation-duration: 2s;">
+        <div class="card d-flex align-items-center bg-vanil py-5" style="width: 96%; height: 90%;">
                 <h1 class="card-title text-light text-uppercase text-center pt-5 pb-4">OPENING TIME</h1>
                 <ul class="text-light px-5 d-flex flex-column" style="font-size: 2rem;width: 100%;">
                   <li class="mb-4">
-                    <span class="text-start" style="float: left;">MON</span>
+                    <span class="text-start pe-5" style="float: left;">MON</span>
                     <span class="text-end" style="float: right;">17:00 to 23:00</span>
                   </li>
                   <li class="mb-4">
-                    <span class="text-start" style="float: left;">WED</span>
+                    <span class="text-start pe-5" style="float: left;">WED</span>
                     <span class="text-end" style="float: right;">19:00 to 24:00</span>
                   </li>
                   <li class="mb-4">
-                    <span class="text-start" style="float: left;">THU</span>
+                    <span class="text-start pe-5" style="float: left;">THU</span>
                     <span class="text-end" style="float: right;">14:00 to 18:00</span>
                   </li>
                   <li class="mb-4">
-                    <span class="text-start" style="float: left;">FRI</span>
+                    <span class="text-start pe-5" style="float: left;">FRI</span>
                     <span class="text-end" style="float: right;">16:00 to 24:00</span>
                   </li>
                   <li class="mb-4">
-                    <span class="text-start" style="float: left;">SAT/SUN</span>
+                    <span class="text-start pe-4" style="float: left;">SAT/SUN</span>
                     <span class="text-end" style="float: right;">20:00 to 4:00</span>
                   </li>
           
@@ -435,12 +628,28 @@
 <footer class="py-5 w-100" style="background-color: #000;"> 
   <p class="text-center gray" style="font-size: 2rem;">COPYRIGHT BY <span class="vanil">@THEMEXRIVER</span> - 2020</p>
 </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/9ist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    
+    -->
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
