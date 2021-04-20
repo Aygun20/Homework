@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>GitLab</title>
+  </head>
+  <body>
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+            <div class="container">
+                <div class="nav-left d-flex align-items-center" style="float: left;">
+                    <!-- <a class="navbar-brand" href="#"><span style="font-size: 2rem;" class="me-2"><i class="fas fa-blog"></i></span><span style="font-size: 1.8rem;" class="text-secondary d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block">GitLab</span></a> -->
+                    <a class="navbar-brand" href="#"><img src="img/gitlab-logo.svg" class="me-3" style="width: 2.8rem;" alt=""><span style="font-size: 1.6rem;" class="text-secondary d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block">GitLab</span></a>
+                    <button type="button" class="btn btn-danger d-sm-inline-block d-md-none d-lg-inline-block d-xl-none px-3 py-2 text-light fw-bold">Get free trial</button>
+               </div>
+              <div class="nav-right" style="float: right;">
+              <a class="nav-link d-sm-inline-block d-md-none d-lg-inline-block d-xl-none text-dark" href="#"><span><i class="fas fa-search"></i></span></a>
+                <button class="navbar-toggler border-0 bg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item px-2">
+                    <div class="dropdown">
+                        <button class="btn text-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </button>
+                        <ul class="dropdown-menu px-4" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item bg-light d-flex flex-row" href="#">
+                            <img src="img/cogs-color.svg" class="me-4" alt="">
+                            <div class="text-drop">
+                             <p>GitLab Professioanl Services</p>
+                             <p class=" text-secondary">Accelerate your software lifecycle with help from GitLab experts</p>
+                         </div>
+                          </a></li>
+                          <li><a class="dropdown-item nav-link disabled" style="font-size: 1.6rem;" href="#">Popular GitLab use cases</a></li>
+                          <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                          <li><a class="dropdown-item" href="#">Small Business</a></li>
+                          <li><a class="dropdown-item" href="#">Continuous Integration (CI/CD)</a></li>
+                          <li><a class="dropdown-item" href="#">Source Code Management  (SCM)</a></li>
+                          <li><a class="dropdown-item" href="#">Out-of-the-box Pipelines (Auto DevOps)</a></li>
+                          <li><a class="dropdown-item" href="#">Security (DevSecOps)</a></li>
+                          <li><a class="dropdown-item" href="#">Agile Development</a></li>
+                          <li><a class="dropdown-item" href="#">Value Stream Management</a></li>
+                          <li><a class="dropdown-item" href="#">GitOps</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <div class="dropdown">
+                        <button class="btn text-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">All-Remote</a></li>
+                          <li><a class="dropdown-item" href="#">Community</a></li>
+                          <li><a class="dropdown-item" href="#">Get Started</a></li>
+                          <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                          <li><a class="dropdown-item" href="#">Is GitLab any good?</a></li>
+                          <li><a class="dropdown-item" href="#">Customer Case Studies</a></li>
+                          <li><a class="dropdown-item" href="#">2020 Developer Survey</a></li>
+                          <li><a class="dropdown-item" href="#">Topics</a></li>
+                          <li><a class="dropdown-item" href="#">Gitlab docs</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Partners</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <div class="dropdown">
+                        <button class="btn text-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Contact Support</a></li>
+                          <li><a class="dropdown-item" href="#">Licensing and Subsciptions</a></li>
+                          <li><a class="dropdown-item" href="#">Caring for Customerd</a></li>
+                          <li><a class="dropdown-item" href="#">Support Resources</a></li>
+                          <li><a class="dropdown-item" href="#">Partners</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Install GitLab</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Explore</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Sign in</a>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block" href="#"><span><i class="fas fa-search"></i></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-danger d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block px-3 py-2 text-light fw-bold">Get free trial</button>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container home-con">
+          <div class="row home-row d-flex justify-content-center align-items-center" style="padding: 4rem 0;">
+              <div class="col">
+                  <p class="col-p">GitLab is the open DevOps platform</p>
+                    <p class="mb-3 col-p-2" style="font-size: 1.3rem;">Iterate faster, innovate together: Our open DevOps platform is a single application for unparalleled collaboration, visibility, and development velocity.</p>
+                    <div class="button-box d-flex">
+                    <button type="button" class="button-box-1 py-3 px-4 text-light btn btn-orange">Try GitLab for Free</button>
+                    <button type="button" class="button-box-2 py-3 px-4 text-light btn btn-purple">Whatch a Demo</button>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center" >
+                  <img src="img/homepage-illustration-d.svg" alt="">
+              </div>
+          </div>
+        </div>
+</header>
+<!-- End Header -->
+<section id="one">
+    <div class="container">
+        <div class="row" style="padding: 4rem 0;">
+            <div class="col-sm-12 col-md-4">
+                <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                    <div class="six-img-box"> </div><img src="img/shield-checkmark.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                      <h5 class="card-title text-center mb-4">Single source of truth</h5>
+                      <p class="card-text text-center">Manage projects, not tools. With GitLab, you get an open DevOps platform delivered as a single application—one interface, one conversation thread, one data store, zero headaches.</p>
+                      <a class="text-center" href="#">Learn more →</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                 <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                    <<div class="six-img-box"> </div><img src="img/icon_continuous-delivery-color.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title text-center mb-4">Continuous everything</h5>
+                        <p class="card-text text-center">Bridge Dev and Ops once and for all. Our industry-leading CI/CD empowers all teams to work together efficiently. Powerful, scalable, end-to-end automation is possible with GitLab.</p>
+                        <a class="text-center" href="#">Learn more →</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                 <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                    <<div class="six-img-box"> </div><img src="img/icon_locked.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title text-center mb-4">Real-time security</h5>
+                        <p class="card-text text-center">See everything that matters. Built-in everything brings automated security, code quality, and vulnerability management. With GitLab, tight governance and control never slow down DevOps speed.</p>
+                        <a class="text-center" href="#">Learn more →</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section One -->
+<section id="two" style="padding: 4rem 0;">
+    <div class="container">
+        <div class="two-main d-flex">
+            <div class="two-col-1 bg-black text-light radius">
+                <p class="mb-5 two-p">Trusted by the companies you use worldwide, loved by developers</p>
+                <div class="row">
+                   <div class="col fw-bold" style="font-size: 1.6rem;">NVDIA</div>
+                   <div class="col" style="letter-spacing: .4rem;">EQUINIX</div>
+                </div>
+                <div class="row">
+                    <div class="col fw-bold" style="font-size: 2rem;">SIEMENS</div>
+                    <div class="col fw-bold" style="font-size: 1.4rem;">DRUPAL</div>
+                 </div>
+            </div>
+            <!-- end two-col-1 -->
+            <div class="two-col-2 btn-purple radius">
+                <div class="container">
+                <a href="#"><h1 class="text-light mb-5 ">Goldman Sachs</h1></a>
+                <div class="white-box bg-light radius">
+                    <a href="#" class="text-dark two-title"><span>Goldman Sachs incereases build speed by demolishing toolchain complexity</span></a>
+                    <div class="d-flex flex-row text-dark">
+                      <span class="purple" style="font-size: 2.5rem;"><i class="fas fa-user-circle"></i></span>
+                      <span class="purple fw-bold" style="font-size: 2.8rem;">1500+</span> 
+                      <p class="pt-4 ps-2 faster">adopters in the first week</p>
+                    </div>
+                        <div class="d-flex flex-row text-dark">
+                            <span class="purple" style="font-size: 2.5rem;"><i class="fas fa-user-circle"></i></span>
+                            <span class="purple fw-bold" style="font-size: 2.8rem;">1500+</span> 
+                            <p class="pt-4 ps-2 faster">adopters in the first week</p>
+                        </div>  
+                    <a href="#" class="text-dark case" style="text-decoration: underline;float: left;"><p class="text-dark">Read the case study.</p></a> <span class="purple ps-3 arrow">→</span>
+                 </div>
+              </div>
+            </div>
+            <!-- end two-col-2 -->
+    </div>
+        <div class="two-main-2 d-flex">
+            <div class="two-main-2-col-1 btn-orange radius">
+                <div class="container">
+
+                <a href="#"><h1 class="text-light">Fanatics</h1></a>
+                <div class="white-box bg-light radius">
+                    <a href="#" class="text-dark two-title"><span>Fanatics' successful GitLab CI transition empowers innovation cycles and speed</span></a>
+                    <div class="two-number d-flex flex-row text-dark">
+                      <span class="queen-orange btn-orange rounded-circle"><i class="fas fa-crown"></i></span>
+                      <span class="orange queen-number">800</span> 
+                      <p class="faster pt-4 ps-3">projects migrated in 3 months</p>
+                    </div>
+                    <div class="two-number d-flex flex-row text-dark">
+                      <span class="queen-orange btn-orange rounded-circle"><i class="fas fa-crown"></i></span>
+                      <span class="queen-number orange">0</span> 
+                        <p class=" faster pt-4 ps-3">need for pathches</p>
+                    </div>  
+                    <a href="#" class="text-dark me-3" style="text-decoration: underline;float: left;"><p class="text-dark">Read the case study.</p></a> <span class="orange">→</span>
+                </div>
+
+               </div>
+            </div>
+            <!-- End Col-1 -->
+            <div class="two-main-2-col-2 bg-black radius">
+                <div class="container">
+                <a href="#"><h1 class="text-light">ticketmaster</h1></a>
+                <div class="white-box bg-light radius">
+                    <a href="#" class="text-dark two-title"><span>Ticketmaster spends less time on builds and more time improving their products</span></a>
+                    <div class="two-number d-flex flex-row text-dark">
+                      <span class=" black" style="font-size: 2.5rem;"><i class="fas fa-arrow-circle-up"></i></span>
+                      <span class="black queen-number">15x</span> 
+                      <p class="faster pt-4 ps-3">faster CI build with GitLab</p>
+                    </div>
+                    <div class="two-number d-flex flex-row text-dark">
+                        <span class="black" style="font-size: 2.5rem;"><i class="fas fa-arrow-circle-up"></i></span>
+                        <span class="black queen-number">Weekly</span> 
+                    </div>  
+                    <a href="#" class="text-dark me-3" style="text-decoration: underline;float: left;"><p class="text-dark">Read the case study.</p></a> <span class="black">→</span>
+                </div>
+              </div>
+            </div>
+                        <!-- End Col-2 -->
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- End Section#two -->
+<section id="three">
+    <div class="con" style="margin: 4rem 2rem 4rem 3rem;">
+      <p class="text-center text-m mb-5">Discover a more streamlined way to work</p>
+        <div class="row">
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Manage</span>
+             </div>
+            <ul class="a-color">
+                <li>Subgroups</li>
+                <li>Audit Events</li>
+                <li>Audit Reports</li>
+                <li>Compliance Management</li>
+                <li>Code Analytics</li>
+                <li>DevOps Reports</li>
+                <li>Value Stream Management</li>
+                <li>Insights</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/new-relic-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Plan</span>
+             </div>
+            <ul class="a-color">
+                <li>Issue Tracking</li>
+                <li>Time Tracking</li>
+                <li>Boards</li>
+                <li>Epics</li>
+                <li>Roadmaps</li>
+                <li>Service Desk</li>
+                <li>Requirements Management</li>
+                <li>Quality Management</li>
+                <li>Design Management</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/azure-cr-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Create</span>
+             </div>
+            <ul class="a-color">
+                <li>Source Code Management</li>
+                <li>Code Review</li>
+                <li>Wiki</li>
+                <li>Static Site Editor</li>
+                <li>Web IDE</li>
+                <li>Live Preview</li>
+                <li>Snippets</li>
+                <li>Insights</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/anchore-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Verify</span>
+             </div>
+            <ul class="a-color">
+                <li>Continuous Integration (CI)</li>
+                <li>Code Quality</li>
+                <li>Code Testing and Coverage</li>
+                <li>Load Testing</li>
+                <li>Browser Performance Testing</li>
+                <li>Usability Testing</li>
+                <li>Accessibility Testing</li>
+                <li>Merge Trains</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/bitbucket-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Package</span>
+             </div>
+            <ul class="a-color">
+                <li>Package Registry</li>
+                <li>Container Registry</li>
+                <li>Helm Chart Registry</li>
+                <li>Dependency Proxy</li>
+                <li>Release Evidence</li>
+                <li>Git LFS</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/buildkite-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Secure</span>
+             </div>
+            <ul class="a-color">
+                <li>SAST</li>
+                <li>DAST</li>
+                <li>Fuzz Testing</li>
+                <li>Dependency Scanning</li>
+                <li>License Compliance</li>
+                <li>Secret Detection</li>
+                <li>Vulnerability Management</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/checkmarx-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+    
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Release</span>
+             </div>
+            <ul class="a-color">
+                <li>Continuous Delivery</li>
+                <li>Pages</li>
+                <li>Review Apps</li>
+                <li>Advanced Deployments</li>
+                <li>Feature Flags</li>
+                <li>Release Orchestration</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/chef.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+    
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Configure</span>
+             </div>
+            <ul class="a-color">
+                <li>Auto DevOps</li>
+                <li>Kubernetes Management</li>
+                <li>Secrets Management</li>
+                <li>ChatOps</li>
+                <li>Serverless</li>
+                <li>Infrastructure as Code</li>
+                <li>Cluster Cost Management</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/codestar-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+    
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Monitor</span>
+             </div>
+            <ul class="a-color">
+                <li>Runbooks</li>
+                <li>Metrics</li>
+                <li>Incident Management</li>
+                <li>Logging</li>
+                <li>Tracing</li>
+                <li>Error Tracking</li>
+                <li>Product Analytics</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/harness-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+
+                    
+            <div class="col shadow-sm  p-0" style="width: 10%;">
+              <div class="col-title d-flex align-items-center justify-content-center w-100">
+                 <span class="icon text-center"><i class="fal fa-lock-alt"></i></span>
+                 <span class="text text-center">Protect</span>
+             </div>
+            <ul class="a-color">
+                <li>Container Scanning</li>
+                <li>Security Orchestration</li>
+                <li>Container Host Security</li>
+                <li>Container Network Security</li>
+            </ul>
+            <div class="col-end-img d-flex flex-row justify-content-between shadow-sm py-4 px-3 border">
+              <span class="d-sm-inline-block d-md-none d-lg-inline-block d-xl-none">Functionally smillar to</span>
+              <img src="img/launchdarkly-logo.png" class="img-fluid"  alt="">
+            </div>
+            </div>
+      
+    
+        </div>
+    </div>
+</section>
+<!-- end Section Three -->
+  <section id="five" style="padding: 4rem 0 7rem 0;">
+  <div class="container d-flex align-items-center justify-content-center flex-column">
+       <img src="img/release.svg" alt="">
+       <span class="text-center">13.10</span>
+       <div class="text-m text-center">New features every month</div>
+       <p class="text-center">GitLab 13.10 released with Admin Enhancements and Vulnerability Management</p>
+       <button type="button" class="button-box-1 py-3 px-4 text-light btn btn-orange" style="font-size: 1.2rem;">See what's new</button>
+  </div>
+  </section>
+  <!-- end Section Five -->
+<section id="six">
+  <div class="container">
+    <h1 class="text-center">The latest from our blog</h1>
+    <div class="row" style="padding: 4rem 0;">
+        <div class="col-sm-12 col-md-4 pe-4">
+            <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                <div class="six-img-box"><img src="img/card3.png" class="card-img-top img-fluid" style="height: 12rem;"  alt="..."> </div>
+                <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">Technology internships meet open source in Outreachy</h4>
+                  <p class="card-text card-text-two text-secondary">by Charvi Mendiratta,Joey Salazar Christian Couder,Nuritzi Sanchez</p>
+                  <p class="card-text card-text-3">Inside Outreachy technology internships ,where participants work on Git.</p>
+                  <a href="#">Learn more <span><i class="fas fa-arrow-right mt-4"></i></span></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-4 ps-4 pe-4">
+             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                <div class="six-img-box"><img src="img/card2.png" class="card-img-top img-fluid" style="height: 12rem;" alt="..."></div>
+                <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">GitLab Critical Security Release: 13.10.3, 13.9.6, and 13.8.8</h4>
+                  <p class="card-text card-text-two text-secondary">by Dominic Couture</p>
+                  <p class="card-text card-text-3">Learn more about GitLab Critical Security Release 13.10.3, 13.9.6, and 13.8.8 for GitLab Community Edition (CE) and Enterprise Edition (EE).</p>
+                  <a href="#">Learn more <span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-4 ps-3">
+             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="six-img-box"><img src="img/card1.jpeg" class="card-img-top img-fluid" style="height: 12rem;" alt="..."></div>
+              <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">GitLab environment variables demystified</h4>
+                  <p class="card-text card-text-two text-secondary"> by Veethika Mishra</p>
+                  <p class="card-text card-text-3">CI/CD variables are useful (and flexible) tools to control jobs and pipelines. We unpack everything you need to know about GitLab environment variables.</p>
+                  <a href="#">Learn more <span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- End Section Six -->
+<section id="seven">
+  <div class="container">
+    <h1 class="text-center">Learn more with our webcasts</h1>
+    <div class="row" style="padding: 4rem 0;">
+        <div class="col-sm-12 col-md-4 pe-4">
+            <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
+                <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">Identify, analyze, action! Deep monitoring with CI</h4>
+                  <p class="card-text card-text-two"> Learn best practices for analyzing your CI pipeline so you can identify bottlenecks, rapidly fix errors, and improve code quality.</p>
+                  <a href="#">Watch now<span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-4 ps-4 pe-4">
+             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
+              <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">  A holistic guide to GitOps and the Cloud Operating Model</h4>
+                  <p class="card-text card-text-two">Learn about common use cases spanning from Cloud Automation, Security, to Monitoring within the context of the key features and functionalities across GitLab, Vault, Terraform, and Consul that enable them.</p>
+                  <a href="#">Watch now<span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+              </div>
+        </div>
+         <div class="col-sm-12 col-md-4 ps-3">
+             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
+              <div class="card-body d-flex flex-column pe-4 shadow-sm">
+                  <h4 class="card-title ">GitLab CI/CD advantages over Jenkins demo</h4>
+                  <p class="card-text card-text-two">See the advantages of GitLab built-in CI/CD over Jenkins CI plugin solution.</p>
+                  <a href="#">Watch now <span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- End Section Seven -->
+<section id="eight" style="padding: 4rem 0;"">
+  <div class="eight-con">
+        <div class="h3-before"></div>
+  <h3 class="text-center mb-4">What’s stopping you from transforming your software development process?</h3>
+  <p  class="eight-two text-center mb-4">We’re here to help. Talk to an expert today.</p>
+  <div class="button-box d-flex">
+    <button type="button" class="button-box-1 py-3 px-4 text-light btn btn-orange">Try GitLab for Free</button>
+    <button type="button" class="button-box-2 py-3 px-4 text-light btn btn-purple">Whatch a Demo</button>
+</div>
+</div>
+</section>
+<!-- End Section Seven -->
+ <footer class="bg-purple" style="padding-top:4rem;">
+
+  <div class="footer-con">
+    <ul class="social text-light d-flex align-items-center justify-content-center mb-5">
+      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-twitter"></i></li>
+      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-facebook"></i></li>
+      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-youtube"></i></li>
+      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-linkedin-in"></i></li>
+    </ul>
+    <div class="row" style="padding-bottom:12rem;">
+      <div class="col-md col-sm-6">
+        <h3>Why GitLab?</h3>
+        <ul>
+          <li>Product</li>
+          <li>Solutions</li>
+          <li>Services</li>
+          <li>DevOps lifecycle</li>
+          <li>DevOps tools</li>
+          <li>Is it any good?</li>
+          <li>Releases</li>
+          <li>Pricing</li>
+          <li>Get started</li>
+        </ul>
+      </div>
+
+      <div class="col-md col-sm-6">
+        <h3>Resources</h3>
+        <ul>
+          <li>All resources</li>
+          <li>All-Remote</li>
+          <li>Blog</li>
+          <li>Newsletter</li>
+          <li>Events</li>
+          <li>Webcasts</li>
+          <li>Topics</li>
+          <li>Training</li>
+          <li>Docs</li>
+          <li>Install</li>
+        </ul>
+      </div>
+
+      <div class="col-md col-sm-6">
+        <h3>Community</h3>
+        <ul>
+          <li>Customers</li>
+          <li>Contribute</li>
+          <li>Community Programs</li>
+          <li>Direction</li>
+          <li>Technology Partners</li>
+          <li>Channel Partners</li>
+          <li>Open Source Partners</li>
+          <li>GitLab for Open Source</li>
+          <li>GitLab for Education</li>
+          <li>GitLab for Startups</li>
+          <li>Shop</li>
+          <li>Community Forum</li>
+        </ul>
+      </div>
+
+      <div class="col-md col-sm-6">
+        <h3>Support</h3>
+        <ul>
+          <li>Get help</li>
+          <li>Contact Sales</li>
+          <li>Contact Support</li>
+          <li>Support options</li>
+          <li>Status</li>
+          <li>Customers Portal</li>
+        </ul>
+      </div>
+
+      <div class="col-md col-sm-6">
+        <h3>Company</h3>
+        <ul>
+          <li>About</li>
+          <li>What is GitLab?</li>
+          <li>Jobs</li>
+          <li>Culture</li>
+          <li>Team</li>
+          <li>Press</li>
+          <li>Analysts</li>
+          <li>Handbook</li>
+          <li>Security</li>
+          <li>Contact</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+          <li>Trademark</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center pb-3 m-0" style="color: rgba(255,255,255,.5);">Git is a trademark of Software Freedom Conservancy and our use of 'GitLab' is under license</p>
+  </div>
+ </footer>
+ <div class="footer-end dark-purple text-light pt-1 d-flex align-items-center justify-content-center">
+  <p>View <a href="" class="text-light" target="_blank">page source</a> — Edit in <a href="" class="text-light" target="_blank">Web IDE</a> — please <a href="" class="text-light" target="_blank">contribute</a>. </p>
+  <img src="img/footer.svg" class="pb-3 ms-2" alt="">
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

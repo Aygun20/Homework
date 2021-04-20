@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+$italic-font: 'Dosis', sans-serif;
+$orange: #fa7035;
+$purple: #9b51e0;
+$white :#fff;
+$gray:#e7e7e7;
+$a-color:#4b3589;
+$middle-black:#333;
+
+.btn-orange{
+    background-color: $orange;
+    color: $white;
+}
+.bg-black{
+    background-color: $middle-black;
+}
+.black{
+    color: #333;
+}
+.dark-purple{
+    background-color: #548;
+}
+.a-color{
+    color: $a-color;
+}
+.btn-purple{
+    background-color: $purple;
+    color: $white;
+}
+.purple{
+    color: $purple;
+}
+.orange{
+    color: $orange;
+}
+.bg-purple{
+    background-color: #6b4fbb;;
+    color: $white;
+}
+a{
+    text-decoration: none;
+    color: $a-color;
+}
+ul{
+    list-style: none;
+}
+.radius{
+    border-radius: .3rem;
+}
+.text-m{
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+html{
+    overflow-x: hidden;
+}
+@media (min-width: 576px) { 
+    header{
+        .navbar{
+            z-index: 99999 !important;
+            background-color: $white;
+        }
+     .home-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .button-box{
+            flex-direction: column !important;
+        }
+        .col-p{
+            font-size: 2.5rem; 
+            line-height: 3rem;    
+            width: 80%;
+            padding-left: 15%;
+        }
+        .col-p-2{
+            font-family: $italic-font;
+        }
+        .button-box-1{
+            margin-bottom: .5rem;
+        }
+    }
+}
+// End Header
+section#one{
+   .card{
+       margin-bottom: 3rem;
+    .card-text{
+        font-size: 1.2rem;
+        font-family: $italic-font;
+    }
+    .card-title{
+        font-size: 1.4rem;
+    }
+   } 
+}
+ //End Section One
+ section#two{
+     .two-main{
+         flex-direction: column !important;
+         .two-col-1{
+         padding-left: 1.5rem;
+         padding-top: 2rem;
+         margin-bottom: 1rem;
+         padding-bottom: 1rem;
+         .two-p{
+             margin-bottom: 1rem !important;
+         }
+         }
+         p{
+            font-size: 1.5rem;
+        }
+     }
+    
+    }
+    .two-col-2 {
+        margin-bottom: 2rem;
+        .container{
+            padding: 1.5rem;
+            h1{
+                font-size: 2.2rem !important;
+                line-height: 1.6rem;
+                width: 5rem;
+                margin-bottom: 1rem !important;
+            }
+            .white-box{
+                padding: 1rem;
+                a{
+                    font-size: 1.2rem;
+                }
+                span.purple{
+                    font-size: 2rem !important;
+                    font-weight: 400 !important;
+                }
+                p{
+                    font-size: 1rem !important;
+                    padding-top: 1rem !important;
+                }
+                .case{
+                    font-size: .5rem !important;
+                }
+            }
+        }
+       
+    }
+    .two-main-2{
+        flex-direction: column !important;
+        .two-main-2-col-1{
+           width: 100% !important;
+           padding-bottom: 2rem;
+           margin-bottom: 2rem;
+           padding-top: 1rem;
+           h1{
+            padding-left: 1rem;
+        }
+        .white-box{
+            padding: 2rem;
+            margin: 1rem;
+            margin-bottom: 0;
+            .two-number{
+                span.queen-orange{
+                    width: 2.5rem !important;
+                    height: 2.5rem !important;
+                    padding:.5rem .6rem !important;
+                    margin-right: 1rem !important;
+                    margin-top: 1rem !important;
+                }
+                .queen-number{
+                    font-weight: 600;
+                    font-size: 2rem ;
+                    margin-top: 1rem;
+                }
+            }
+          
+         .two-title{
+             font-size: 1.4rem;
+         }   
+        }
+        }
+        .two-main-2-col-2{
+           width: 100% !important;
+           padding-bottom: 2rem;
+           padding-top: 1rem;
+         
+           h1{
+               padding-left: 1rem;
+           }
+           .white-box{
+            padding: 2rem;
+            margin: 1rem;
+            margin-bottom: 0;
+            .two-number{
+                .queen-number{
+                    font-weight: 600;
+                    font-size: 2rem ;
+                    margin-top: .5rem !important;
+                    padding-left: 1rem;
+                }
+            }
+            .two-title{
+                font-size: 1.3rem;
+            }   
+        }
+        }
+       }
+     
+// End Section Two
+section#three{
+    .row{
+        display: flex;
+            flex-direction: column !important;
+            .col{
+           width: 98% !important;
+            
+       .col-title{
+           flex-direction: row;
+           .icon{
+               font-size: 2.5rem;
+               color: $a-color;
+               margin-right: .5rem;
+           }
+           .text{
+            font-size: 1.5rem;
+            color: $a-color;
+            font-weight: 500;
+        }
+       }
+       ul{
+           width: 100% !important;
+           font-size: .8rem;
+           li{
+               margin-bottom: 1rem;
+           }
+       }
+       .col-end-img{
+        img{
+            width: 12%;
+            padding: 0;
+        }
+           span{
+               font-size: .9rem;
+           }
+       }
+    }
+}
+}
+//End Section Three
+section#five{
+    span{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    button{
+        width: 100%;
+        font-size: 1rem !important;
+    }
+    }
+ //End Section Five
+ section#six{
+  .row{
+      padding-top: 1rem !important;
+  }
+    }
+ //End Section Six
+section#seven{
+ img{
+     width: 100%;
+ }  
+.container{
+width: 100%;
+}
+}
+//End Section Six
+section#eight{
+    width: 98% !important;
+    align-items: center;
+    display: flex;
+    .eight-con{
+        width: 94%;
+        margin-left: 2rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .h3-before{
+            background: url('/img/eight-img.png') no-repeat 0 0;
+            background-size: 212px;
+            height: 91px;
+            width: 22rem;
+            margin-left: 10rem !important;
+            margin-bottom: 2rem;
+        }
+        .button-box{
+            flex-direction: column;
+            button{
+                width: 32rem !important;
+            }
+            .button-box-1{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+ //End Section Seven
+footer{
+    .footer-con{
+        width: 90% !important;
+        margin-left: 2rem;
+        ul {
+            margin-bottom: 5rem;
+            li{
+                font-size: .9rem;
+                line-height: 2.2rem;
+            }
+        }
+        h3{
+            margin-left: 1.8rem;
+            font-size: 2.2rem;
+        }
+    }
+ .footer-end{
+     p{
+         font-size: .8rem !important;
+         color: $white;
+         a{
+            color: $white;
+         }
+         a:hover{
+            color: $white;
+         }
+     }
+ }
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+header{
+    .home-row{
+        flex-direction: row;
+        .col{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            .button-box{
+            flex-direction: row !important;
+            .button-box-1{
+                margin-bottom: 0;
+            }
+            }
+            button{
+                width: 14rem;
+                margin-right: .5rem;
+            }
+            .button-box-2{
+                width: 11rem;
+            }
+        }
+        .col-p{
+            font-size: 4rem; 
+            line-height: 4.5rem;   
+            width: 100% !important; 
+            padding-left: 0 !important;
+            text-align: left !important;
+        }
+        .col-p-2{
+         font-size:1.6rem !important;
+         text-align: left;
+         margin-bottom: 3rem !important;
+        }
+    }
+}
+//End Header
+section#one{
+    .card{
+        margin-bottom: 0rem;
+        .card-text{
+            font-size: 1.2rem;
+        }
+        .card-title{
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+        }
+    } 
+ }
+ // End Section One
+ section#two{
+    .two-main{
+        flex-direction: row !important;
+        margin-bottom: 2rem;
+    }
+         .two-col-1{
+        //  padding: 3rem 1.5rem 5rem 2rem !important;
+         margin-right: 2rem;
+         width: 30%;
+             p{
+                font-size: 2.1rem ;
+            }
+         }
+     .two-col-2{
+         width: 70%;
+         .white-box{
+            padding: 2rem 1rem 2rem 2rem;
+         }
+         .container{
+            padding:3rem  5rem;
+         }
+         h1{
+            font-family: 'Orelega One', cursive;
+                font-size: 4rem !important;
+                line-height: 3rem;
+                margin-bottom: 3rem !important;
+                width: 10rem;
+         }
+         .two-title{
+             font-size: 2.3rem;
+             margin-bottom: 4rem;
+         }
+         p.faster{
+            font-size: 1.8rem !important;
+        }
+     }
+
+     .two-main-2{
+         flex-direction: row !important;
+      .two-main-2-col-1{
+            width: 50%;
+            margin-right: 2rem;
+            margin-bottom: 0 !important;
+            padding-top: 0;
+            .container{
+                padding:2rem 2rem 0 2rem !important;
+                .white-box{
+                    padding: 1rem 1rem 2rem 2rem;
+                    margin: 0;
+                    .two-number{
+                        .queen-number{
+                            font-weight: 700;
+                            font-size: 2.8rem ;
+                            margin-top: 0rem;
+                        }
+                    }
+                 }
+                h1{
+                    font-size: 3rem !important;
+                    margin-bottom: 1.5rem !important;
+                    padding-left: 0;
+                }
+                .two-title{
+                    font-size: 1.6rem;
+                }
+                p.faster{
+                    font-size: 1.6rem ;
+                }
+                .case{
+                    font-size: 1rem !important;
+                }
+             }
+        } 
+        .two-main-2-col-2{
+            width: 50%;
+            padding-top: 0;
+            .container{
+                padding:2rem 2rem 0 2rem !important;
+                .white-box{
+                    padding: 1rem 1rem 2rem 2rem;    
+                    margin: 0;            
+                    .two-number{
+                        .queen-number{
+                            font-weight: 700;
+                            font-size: 2.8rem ;
+                            margin-top: 0rem;
+                        }
+                    }
+                }
+                .two-title{
+                    font-size: 1.6rem;
+                }
+                h1{
+                    font-size: 3rem !important;
+                    margin-bottom: 1.5rem !important;
+                    padding-left: 0;
+                }
+                p.faster{
+                    font-size: 1.6rem ;
+                }
+            }
+        } 
+     }
+    }
+ // End Section Two
+ section#three{
+    .row{
+            flex-direction: row !important;
+       .col-title{
+           display: flex;
+           flex-direction: column !important;
+           border-bottom: 1px $gray solid;
+           padding: 1.2rem !important;
+           .text{
+               font-size: 1rem !important;
+           }
+       }
+       ul {
+           border-right: 1px solid $gray;
+           font-size: 1rem !important;
+           height: 30rem;
+        li{
+            margin: 1.5rem 0;
+           }
+       }
+       .col-end-img{
+           height: 7rem;
+           padding: 1rem;
+        img{
+            width: 100% !important;
+        }
+    }
+}
+}
+//End Section Three
+
+section#five{
+span{
+    font-size: 4rem;
+}
+p{
+    font-size: 1.2rem;
+}
+button{
+    width: 12rem;
+}
+}
+//End Section Five
+section#six{
+    .row{
+        padding-top: 4rem !important;
+    }
+    .card-text-two  {
+        font-size: 1.3rem;
+    }
+    .card-text-3{
+        font-size: 1.2rem;
+    }
+    .six-img-box{
+overflow: hidden;
+cursor: pointer;
+top: 0;
+img{
+    position: relative;
+    transition: all 300ms ease;
+}
+    }
+    .six-img-box:hover img {
+        transform: scale(1.2);
+        transition: all .3s ease;
+        overflow: hidden;
+
+      }
+}
+// End Section Seven
+section#seven{
+    h1{
+        top: 30rem;   
+    }
+    .card-text-two  {
+        font-size: 1.1rem;
+    }
+    .seven-img-box{
+      overflow: hidden;
+      cursor: pointer;
+
+    }
+    .seven-img-box:hover img {
+        transform: scale(1.1);
+        transition: all .2s ease;
+      }
+      .card-body{
+          height: 20rem;
+      }
+}
+//End section seven
+section#eight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 10rem !important;
+    .eight-con{
+        width: 50%;
+        .eight-two{
+            font-size: 18px;
+        }
+    button{
+        font-size: 18px;
+    }
+    }
+    h3{
+        font-family: 'Orelega' ;
+    }
+    .h3-before{
+        background: url('/img/eight-img.png') no-repeat 0 0;
+        background-size: 212px;
+        height: 91px;
+        width: 22rem;
+        margin: 1rem 12rem;
+    }
+    
+}
+//End Section Eight
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-con{
+        width: 70%;
+        h3{
+            margin-left: 2rem;
+        }
+        ul li{
+            font-size: 18px;
+            line-height: 2.2rem;
+            transition: .2s ease-in-out;
+        }
+        ul li:hover{
+            color: lighten($orange,10%);
+        }
+    }
+}
+.footer-end{
+    p a{
+        color: $white;
+        text-decoration: underline;
+    }
+    a:hover{
+        color: $a-color;
+    }
+}
+}
