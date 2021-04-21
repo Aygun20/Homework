@@ -16,8 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
             <div class="container">
                 <div class="nav-left d-flex align-items-center" style="float: left;">
-                    <!-- <a class="navbar-brand" href="#"><span style="font-size: 2rem;" class="me-2"><i class="fas fa-blog"></i></span><span style="font-size: 1.8rem;" class="text-secondary d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block">GitLab</span></a> -->
-                    <a class="navbar-brand" href="#"><img src="img/gitlab-logo.svg" class="me-3" style="width: 2.8rem;" alt=""><span style="font-size: 1.6rem;" class="text-secondary d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block">GitLab</span></a>
+                    <a class="navbar-brand" href="#"><img src="img/gitlab-logo.svg" class="me-3" style="width: 2.8rem;" alt=""><span style="font-size: 1.6rem;" class="gitlab text-secondary d-sm-none d-md-inline-block d-lg-inline-block d-xl-inline-block">GitLab</span></a>
                     <button type="button" class="btn btn-danger d-sm-inline-block d-md-none d-lg-inline-block d-xl-none px-3 py-2 text-light fw-bold">Get free trial</button>
                </div>
               <div class="nav-right" style="float: right;">
@@ -114,6 +113,103 @@
               </div>
             </div>
           </nav>
+
+            <button  id="dark-change" onclick="myFunc()"></button>
+            <button  id="light-change" onclick="myFunc_light()"></button>
+          <script>
+            const myFunc =()=>{
+              document.querySelector('body').style.background='#000';
+              document.querySelector('body').style.color='#fff';
+              document.querySelector('#dark-change').style.background='#333';
+              document.querySelector('#dark-change').style.color='#fff';
+              document.querySelector('.navbar').style.background='#353839';
+              document.querySelectorAll('.footer-ul')[0].style.color='#353839';
+              document.querySelectorAll('.footer-ul')[1].style.color='#353839';
+              document.querySelectorAll('.footer-ul')[2].style.color='#353839';
+              document.querySelectorAll('.footer-ul')[3].style.color='#353839';
+              document.querySelectorAll('.footer-ul')[4].style.color='#353839';
+              document.querySelectorAll('.footer-h3')[0].style.color='#353839';
+              document.querySelectorAll('.footer-h3')[1].style.color='#353839';
+              document.querySelectorAll('.footer-h3')[2].style.color='#353839';
+              document.querySelectorAll('.footer-h3')[3].style.color='#353839';
+              document.querySelectorAll('.footer-h3')[4].style.color='#353839';
+
+              document.querySelectorAll('.footer-social')[0].style.color='#353839';
+              document.querySelectorAll('.footer-social')[1].style.color='#353839';
+              document.querySelectorAll('.footer-social')[2].style.color='#353839';
+              document.querySelectorAll('.footer-social')[3].style.color='#353839';
+
+              document.querySelectorAll('.footer-end-p')[0].style.color='#353839';
+
+              document.querySelectorAll('.card-one')[0].style.background='#353839';
+              document.querySelectorAll('.card-one')[0].style.color='#fff';
+              document.querySelectorAll('.card-one')[1].style.background='#353839';
+              document.querySelectorAll('.card-one')[1].style.color='#fff';
+              document.querySelectorAll('.card-one')[2].style.background='#353839';
+              document.querySelectorAll('.card-one')[2].style.color='#fff';
+
+              document.querySelectorAll('.card-six')[0].style.background='#232b2b';
+              document.querySelectorAll('.card-six')[0].style.color='#fff';
+              document.querySelectorAll('.card-six')[1].style.background='#232b2b';
+              document.querySelectorAll('.card-six')[1].style.color='#fff';
+              document.querySelectorAll('.card-six')[2].style.background='#232b2b';
+              document.querySelectorAll('.card-six')[2].style.color='#fff';
+
+              document.querySelectorAll('.card-seven')[0].style.background='#232b2b';
+              document.querySelectorAll('.card-seven')[0].style.color='#fff';
+              document.querySelectorAll('.card-seven')[1].style.background='#232b2b';
+              document.querySelectorAll('.card-seven')[1].style.color='#fff';
+              document.querySelectorAll('.card-seven')[2].style.background='#232b2b';
+              document.querySelectorAll('.card-seven')[2].style.color='#fff';
+
+            }
+            const myFunc_light =()=>{
+              document.querySelector('body').style.background='#fff';
+              document.querySelector('body').style.color='#000';
+              document.querySelector('#dark-change').style.background='#333';
+              document.querySelector('#dark-change').style.color='#fff';
+              document.querySelector('.navbar').style.background='#fff';
+              document.querySelectorAll('.footer-ul')[0].style.color='#fff';
+              document.querySelectorAll('.footer-ul')[1].style.color='#fff';
+              document.querySelectorAll('.footer-ul')[2].style.color='#fff';
+              document.querySelectorAll('.footer-ul')[3].style.color='#fff';
+              document.querySelectorAll('.footer-ul')[4].style.color='#fff';
+              document.querySelectorAll('.footer-h3')[0].style.color='#fff';
+              document.querySelectorAll('.footer-h3')[1].style.color='#fff';
+              document.querySelectorAll('.footer-h3')[2].style.color='#fff';
+              document.querySelectorAll('.footer-h3')[3].style.color='#fff';
+              document.querySelectorAll('.footer-h3')[4].style.color='#fff';
+
+              document.querySelectorAll('.footer-social')[0].style.color='#fff';
+              document.querySelectorAll('.footer-social')[1].style.color='#fff';
+              document.querySelectorAll('.footer-social')[2].style.color='#fff';
+              document.querySelectorAll('.footer-social')[3].style.color='#fff';
+
+              document.querySelectorAll('.footer-end-p')[0].style.color='#fff';
+
+              document.querySelectorAll('.card-one')[0].style.color='#353839';
+              document.querySelectorAll('.card-one')[0].style.background='#fff';
+              document.querySelectorAll('.card-one')[1].style.color='#353839';
+              document.querySelectorAll('.card-one')[1].style.background='#fff';
+              document.querySelectorAll('.card-one')[2].style.color='#353839';
+              document.querySelectorAll('.card-one')[2].style.background='#fff';
+
+              document.querySelectorAll('.card-six')[0].style.color='#232b2b';
+              document.querySelectorAll('.card-six')[0].style.background='#fff';
+              document.querySelectorAll('.card-six')[1].style.color='#232b2b';
+              document.querySelectorAll('.card-six')[1].style.background='#fff';
+              document.querySelectorAll('.card-six')[2].style.color='#232b2b';
+              document.querySelectorAll('.card-six')[2].style.background='#fff';
+
+              document.querySelectorAll('.card-seven')[0].style.color='#232b2b';
+              document.querySelectorAll('.card-seven')[0].style.background='#fff';
+              document.querySelectorAll('.card-seven')[1].style.color='#232b2b';
+              document.querySelectorAll('.card-seven')[1].style.background='#fff';
+              document.querySelectorAll('.card-seven')[2].style.color='#232b2b';
+              document.querySelectorAll('.card-seven')[2].style.background='#fff';
+            }
+        </script>
+
           <div class="container home-con">
           <div class="row home-row d-flex justify-content-center align-items-center" style="padding: 4rem 0;">
               <div class="col">
@@ -135,7 +231,7 @@
     <div class="container">
         <div class="row" style="padding: 4rem 0;">
             <div class="col-sm-12 col-md-4">
-                <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+                <div class="card card-one border-0 d-flex flex-column align-items-center justify-content-center">
                     <div class="six-img-box"> </div><img src="img/shield-checkmark.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
                       <h5 class="card-title text-center mb-4">Single source of truth</h5>
@@ -145,8 +241,8 @@
                   </div>
             </div>
             <div class="col-sm-12 col-md-4">
-                 <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
-                    <<div class="six-img-box"> </div><img src="img/icon_continuous-delivery-color.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
+                 <div class="card card-one border-0 d-flex flex-column align-items-center justify-content-center">
+                    <div class="six-img-box"> </div><img src="img/icon_continuous-delivery-color.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
                         <h5 class="card-title text-center mb-4">Continuous everything</h5>
                         <p class="card-text text-center">Bridge Dev and Ops once and for all. Our industry-leading CI/CD empowers all teams to work together efficiently. Powerful, scalable, end-to-end automation is possible with GitLab.</p>
@@ -155,11 +251,11 @@
                   </div>
             </div>
             <div class="col-sm-12 col-md-4">
-                 <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
-                    <<div class="six-img-box"> </div><img src="img/icon_locked.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
+                 <div class="card card-one border-0 d-flex flex-column align-items-center justify-content-center">
+                    <div class="six-img-box"> </div><img src="img/icon_locked.svg" class="card-img-top img-fluid" style="width: 5rem;" alt="...">
                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
                         <h5 class="card-title text-center mb-4">Real-time security</h5>
-                        <p class="card-text text-center">See everything that matters. Built-in everything brings automated security, code quality, and vulnerability management. With GitLab, tight governance and control never slow down DevOps speed.</p>
+                        <p class="card-text text-center">See everything that matters. Built-in everything brings automated security, code quality, and vulnerability management. With GitLab, tight governance and control never slow down DevOps.</p>
                         <a class="text-center" href="#">Learn more →</a>
                     </div>
                   </div>
@@ -480,7 +576,7 @@
     <h1 class="text-center">The latest from our blog</h1>
     <div class="row" style="padding: 4rem 0;">
         <div class="col-sm-12 col-md-4 pe-4">
-            <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+            <div class="card card-six border-0 d-flex flex-column align-items-center justify-content-center">
                 <div class="six-img-box"><img src="img/card3.png" class="card-img-top img-fluid" style="height: 12rem;"  alt="..."> </div>
                 <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">Technology internships meet open source in Outreachy</h4>
@@ -491,7 +587,7 @@
               </div>
         </div>
         <div class="col-sm-12 col-md-4 ps-4 pe-4">
-             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+             <div class="card card-six border-0 d-flex flex-column align-items-center justify-content-center">
                 <div class="six-img-box"><img src="img/card2.png" class="card-img-top img-fluid" style="height: 12rem;" alt="..."></div>
                 <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">GitLab Critical Security Release: 13.10.3, 13.9.6, and 13.8.8</h4>
@@ -502,7 +598,7 @@
               </div>
         </div>
         <div class="col-sm-12 col-md-4 ps-3">
-             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+             <div class="card card-six border-0 d-flex flex-column align-items-center justify-content-center">
               <div class="six-img-box"><img src="img/card1.jpeg" class="card-img-top img-fluid" style="height: 12rem;" alt="..."></div>
               <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">GitLab environment variables demystified</h4>
@@ -521,31 +617,31 @@
     <h1 class="text-center">Learn more with our webcasts</h1>
     <div class="row" style="padding: 4rem 0;">
         <div class="col-sm-12 col-md-4 pe-4">
-            <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+            <div class="card card-seven border-0 d-flex flex-column align-items-center justify-content-center">
                 <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
                 <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">Identify, analyze, action! Deep monitoring with CI</h4>
-                  <p class="card-text card-text-two"> Learn best practices for analyzing your CI pipeline so you can identify bottlenecks, rapidly fix errors, and improve code quality.</p>
-                  <a href="#">Watch now<span><i class="fas fa-arrow-right"></i></span></a>
+                  <p class="p-one card-text card-text-two"> Learn best practices for analyzing your CI pipeline so you can identify bottlenecks, rapidly fix errors, and improve code quality.</p>
+                  <a href="#">Watch now <span><i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
         </div>
         <div class="col-sm-12 col-md-4 ps-4 pe-4">
-             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+             <div class="card card-seven border-0 d-flex flex-column align-items-center justify-content-center">
               <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
               <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">  A holistic guide to GitOps and the Cloud Operating Model</h4>
                   <p class="card-text card-text-two">Learn about common use cases spanning from Cloud Automation, Security, to Monitoring within the context of the key features and functionalities across GitLab, Vault, Terraform, and Consul that enable them.</p>
-                  <a href="#">Watch now<span><i class="fas fa-arrow-right"></i></span></a>
+                  <a href="#">Watch now <span><i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
         </div>
          <div class="col-sm-12 col-md-4 ps-3">
-             <div class="card border-0 d-flex flex-column align-items-center justify-content-center">
+             <div class="card card-seven border-0 d-flex flex-column align-items-center justify-content-center">
               <div class="seven-img-box"><img src="img/card4.png" class="card-img-top img-fluid" style="height: 12rem;width: 30rem;"  alt="..."> </div>
               <div class="card-body d-flex flex-column pe-4 shadow-sm">
                   <h4 class="card-title ">GitLab CI/CD advantages over Jenkins demo</h4>
-                  <p class="card-text card-text-two">See the advantages of GitLab built-in CI/CD over Jenkins CI plugin solution.</p>
+                  <p class="card-text card-text-two p-three">See the advantages of GitLab built-in CI/CD over Jenkins CI plugin solution.</p>
                   <a href="#">Watch now <span><i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
@@ -570,15 +666,15 @@
 
   <div class="footer-con">
     <ul class="social text-light d-flex align-items-center justify-content-center mb-5">
-      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-twitter"></i></li>
-      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-facebook"></i></li>
-      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-youtube"></i></li>
-      <li><i style="font-size: 1.8rem;" class="me-4 fab fa-linkedin-in"></i></li>
+      <li><i style="font-size: 1.8rem;" class="footer-social me-4 fab fa-twitter"></i></li>
+      <li><i style="font-size: 1.8rem;" class="footer-social me-4 fab fa-facebook"></i></li>
+      <li><i style="font-size: 1.8rem;" class="footer-social me-4 fab fa-youtube"></i></li>
+      <li><i style="font-size: 1.8rem;" class="footer-social me-4 fab fa-linkedin-in"></i></li>
     </ul>
     <div class="row" style="padding-bottom:12rem;">
       <div class="col-md col-sm-6">
-        <h3>Why GitLab?</h3>
-        <ul>
+        <h3 class="footer-h3">Why GitLab?</h3>
+        <ul class="footer-ul">
           <li>Product</li>
           <li>Solutions</li>
           <li>Services</li>
@@ -592,8 +688,8 @@
       </div>
 
       <div class="col-md col-sm-6">
-        <h3>Resources</h3>
-        <ul>
+        <h3 class="footer-h3">Resources</h3>
+        <ul class="footer-ul">
           <li>All resources</li>
           <li>All-Remote</li>
           <li>Blog</li>
@@ -608,8 +704,8 @@
       </div>
 
       <div class="col-md col-sm-6">
-        <h3>Community</h3>
-        <ul>
+        <h3 class="footer-h3">Community</h3>
+        <ul class="footer-ul">
           <li>Customers</li>
           <li>Contribute</li>
           <li>Community Programs</li>
@@ -626,8 +722,8 @@
       </div>
 
       <div class="col-md col-sm-6">
-        <h3>Support</h3>
-        <ul>
+        <h3 class="footer-h3">Support</h3>
+        <ul class="footer-ul">
           <li>Get help</li>
           <li>Contact Sales</li>
           <li>Contact Support</li>
@@ -638,8 +734,8 @@
       </div>
 
       <div class="col-md col-sm-6">
-        <h3>Company</h3>
-        <ul>
+        <h3 class="footer-h3">Company</h3>
+        <ul class="footer-ul">
           <li>About</li>
           <li>What is GitLab?</li>
           <li>Jobs</li>
@@ -660,7 +756,7 @@
   </div>
  </footer>
  <div class="footer-end dark-purple text-light pt-1 d-flex align-items-center justify-content-center">
-  <p>View <a href="" class="text-light" target="_blank">page source</a> — Edit in <a href="" class="text-light" target="_blank">Web IDE</a> — please <a href="" class="text-light" target="_blank">contribute</a>. </p>
+  <p class="footer-end-p">View <a href="" class="text-light footer-end-a" target="_blank">page source</a> — Edit in <a href="" class="text-light footer-end-a" target="_blank">Web IDE</a> — please <a href="" class="text-light footer-end-a" target="_blank">contribute</a>. </p>
   <img src="img/footer.svg" class="pb-3 ms-2" alt="">
 </div>
     <!-- Optional JavaScript; choose one of the two! -->

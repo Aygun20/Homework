@@ -11,7 +11,7 @@ $white :#fff;
 $gray:#e7e7e7;
 $a-color:#4b3589;
 $middle-black:#333;
-
+$black-low:	#353839;
 .btn-orange{
     background-color: $orange;
     color: $white;
@@ -59,7 +59,56 @@ ul{
 html{
     overflow-x: hidden;
 }
+//Start Dark Mood
+
+.navbar.night{
+    background-color: $black-low;
+}
+//End Dark Mood
+
 @media (min-width: 576px) { 
+    #dark-change{
+        position: absolute;
+        width: 5rem;
+        height: 2rem;
+        right: 2rem;
+        top: 5rem;
+        outline: none;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        line-height: 1.5rem;
+        border-radius: 20px;
+    }
+    #dark-change:before{
+        content: 'Dark Mood';
+        font-size: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+        transition: 0.4s;
+    }
+    #light-change{
+        position: absolute;
+        width: 5rem;
+        height: 2rem;
+        right: 2rem;
+        top: 8rem;
+        text-align: center;
+        line-height: 1.5rem;
+        background-color:#fff;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 20px;
+    }
+    #light-change:before{
+        content: 'Light Mood';
+        font-size: 10px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        transition: 0.4s;
+    }
     header{
         .navbar{
             z-index: 99999 !important;
@@ -331,6 +380,7 @@ footer{
  .footer-end{
      p{
          font-size: .8rem !important;
+         width: 94%;
          color: $white;
          a{
             color: $white;
@@ -350,6 +400,48 @@ footer{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    #dark-change{
+        position: absolute;
+        width: 5rem;
+        height: 2rem;
+        right: 4rem;
+        top: 10rem;
+        outline: none;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        line-height: 1.5rem;
+        border-radius: 20px;
+    }
+    #dark-change:before{
+        content: 'Dark Mood';
+        font-size: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+        transition: 0.4s;
+    }
+    #light-change{
+        position: absolute;
+        width: 5rem;
+        height: 2rem;
+        right: 4rem;
+        top: 13rem;
+        text-align: center;
+        line-height: 1.5rem;
+        background-color:#fff;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 20px;
+    }
+    #light-change:before{
+        content: 'Light Mood';
+        font-size: 10px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        transition: 0.4s;
+    }
 header{
     .home-row{
         flex-direction: row;
@@ -592,6 +684,12 @@ section#seven{
       }
       .card-body{
           height: 20rem;
+         .p-one{
+             margin-bottom: 5.5rem;
+         }
+         .p-three{
+            margin-bottom: 7rem;
+        }
       }
 }
 //End section seven
@@ -607,9 +705,17 @@ section#eight{
         .eight-two{
             font-size: 18px;
         }
-    button{
-        font-size: 18px;
-    }
+        .button-box{
+            flex-direction: row !important;
+            button{
+                font-size: 18px;
+                width: 13rem !important;
+            }
+            .button-box-1{
+                margin-bottom: 0rem;
+                margin-right: 1rem;
+            }
+        }
     }
     h3{
         font-family: 'Orelega' ;
@@ -619,7 +725,7 @@ section#eight{
         background-size: 212px;
         height: 91px;
         width: 22rem;
-        margin: 1rem 12rem;
+        margin: 1rem 5rem;
     }
     
 }

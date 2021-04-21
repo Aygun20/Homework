@@ -61,7 +61,55 @@ html {
   overflow-x: hidden;
 }
 
+.navbar.night {
+  background-color: #353839;
+}
+
 @media (min-width: 576px) {
+  #dark-change {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    right: 2rem;
+    top: 5rem;
+    outline: none;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.5rem;
+    border-radius: 20px;
+  }
+  #dark-change:before {
+    content: 'Dark Mood';
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #light-change {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    right: 2rem;
+    top: 8rem;
+    text-align: center;
+    line-height: 1.5rem;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+  }
+  #light-change:before {
+    content: 'Light Mood';
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   header .navbar {
     z-index: 99999 !important;
     background-color: #fff;
@@ -338,6 +386,7 @@ html {
   }
   footer .footer-end p {
     font-size: .8rem !important;
+    width: 94%;
     color: #fff;
   }
   footer .footer-end p a {
@@ -349,6 +398,50 @@ html {
 }
 
 @media (min-width: 992px) {
+  #dark-change {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    right: 4rem;
+    top: 10rem;
+    outline: none;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.5rem;
+    border-radius: 20px;
+  }
+  #dark-change:before {
+    content: 'Dark Mood';
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #light-change {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    right: 4rem;
+    top: 13rem;
+    text-align: center;
+    line-height: 1.5rem;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+  }
+  #light-change:before {
+    content: 'Light Mood';
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   header .home-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -596,6 +689,12 @@ html {
   section#seven .card-body {
     height: 20rem;
   }
+  section#seven .card-body .p-one {
+    margin-bottom: 5.5rem;
+  }
+  section#seven .card-body .p-three {
+    margin-bottom: 7rem;
+  }
   section#eight {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -619,8 +718,19 @@ html {
   section#eight .eight-con .eight-two {
     font-size: 18px;
   }
-  section#eight .eight-con button {
+  section#eight .eight-con .button-box {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  section#eight .eight-con .button-box button {
     font-size: 18px;
+    width: 13rem !important;
+  }
+  section#eight .eight-con .button-box .button-box-1 {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
   }
   section#eight h3 {
     font-family: 'Orelega';
@@ -630,7 +740,7 @@ html {
     background-size: 212px;
     height: 91px;
     width: 22rem;
-    margin: 1rem 12rem;
+    margin: 1rem 5rem;
   }
   footer {
     display: -webkit-box;
