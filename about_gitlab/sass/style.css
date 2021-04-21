@@ -442,6 +442,12 @@ html {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+  header .navbar .nav-link {
+    font-size: .9rem;
+  }
+  header .nav-drop {
+    font-size: .9rem;
+  }
   header .home-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

@@ -443,6 +443,12 @@ footer{
         transition: 0.4s;
     }
 header{
+    .navbar .nav-link{
+        font-size: .9rem;
+    }
+    .nav-drop{
+        font-size: .9rem;
+    }
     .home-row{
         flex-direction: row;
         .col{
